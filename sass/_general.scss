@@ -1,0 +1,54 @@
+$font-family: 'Round Pro', sans-serif;
+$font-fm-second: 'Noto Serif', sans-serif;
+
+//color 
+$white: #fff;
+$black: #000;
+$gray: #707070;
+
+@mixin border-radius($radius){
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+@mixin transform ($property){
+    transform: $property;
+    -webkit-transform: $property;
+    -moz-transform: $property;
+    -ms-transform: $property;
+    -o-transform: $property;
+}
+
+@mixin transition ($property){
+    transition: $property;
+    -webkit-transition: $property;
+    -moz-transition: $property;
+    -ms-transition: $property;
+    -o-transition: $property;
+}
+
+html {
+    font-size: 18px;
+}
+
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: $font-family;
+    font-weight: 400;    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-fm-second;
+}
+
+
+
+
+
+
+
