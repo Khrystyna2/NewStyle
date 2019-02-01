@@ -1,9 +1,35 @@
 .header {
     height: 100vh;
-    background: rgba(0, 0, 0, .5);
     padding: 2.3rem 0 3.3rem;
     position: relative;
     color: $white;
+    .container {
+        position: relative;
+        .col-12 {
+            position: static;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 4.3rem;
+        width: 4px;
+        border-left: 1px solid $white;
+        @include animate(height 2s ease infinite);       
+    }
+}
+@keyframes height {
+    0% {
+        height: 1.4rem;
+    }
+    50% {
+        height: 4.3rem;
+    }
+    100% {
+        height: 1.4rem;
+    }
 }
 
 .header-menu {
@@ -45,6 +71,7 @@
             padding: 1.3rem 0;
             width: 12.4rem;
             display: none;
+            z-index: 10;
             a {
                 color: $black;
                 display: block;
@@ -83,7 +110,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: -1;
+    z-index: 0;
     .slider-header {
         height: 100%;
         width: 100%;
@@ -93,7 +120,83 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba(0, 0, 0, .5);
+            }
         }
+        .slick-dots {
+            width: auto;
+            bottom: 0;
+            top: 50%;
+            right: 7%;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            @include transform(translate(-50%, -50%));
+            li {
+                width: 24px;
+                height: 24px;
+                @include border-radius(50%);
+                @include transform(rotate(45deg));
+                @include transition(border .4s);
+                border: 2px solid $gray;
+                margin: 1.9rem 0;
+                display: block;
+                position: relative;
+                &::after{
+                    content: '';
+                    width: 13px;
+                    height: 13px;
+                    background-color: $gray;
+                    @include border-radius(50%);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin: -6.5px 0 0 -6.5px;
+                }
+                &.slick-active {
+                    @include animate(border-circle 3s linear infinite);
+                    &::after {
+                        background-color: $color-dots;                  
+                    }
+                }
+            }
+        }
+        .slick-counter {
+            color: $white;
+            bottom: 3.9rem;
+            right: 7%;
+            .total {
+                &::before {
+                    border-bottom: 1px solid $white;
+                }
+            }
+        }
+        
+    }
+}
+@keyframes border-circle {
+    0% {
+        border-top: 2px solid $color-dots;
+    }
+    25% {
+        border-right: 2px solid $color-dots;
+    }
+    50% {
+        border-bottom: 2px solid $color-dots;
+    }
+    100% {
+        border-left: 2px solid;
+        border-color: $color-dots;
     }
 }
 
@@ -104,7 +207,83 @@
         font-size: 2.26rem;
         margin-bottom: 15px;
     }
+    .header__btn {
+        width: 16rem;
+        margin: 6.8rem auto 0;
+        color: $white;
+        font-size: 0.9rem;
+        position: relative;
+        padding: 0.6rem 0;
+        &::before {
+            content: '';
+            position: absolute;
+            top: -4.2rem;
+            left: 50%;
+            height: 40px;
+            border-left: 1px solid $white;
+        }
+    }
 }
+
+.social-link__header {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+.group-box {
+    display: flex;
+    align-items: center;
+    .search-icon {
+        position: absolute;
+        top: 50%;
+        @include transform(translate(-50%, -50%));
+        z-index: 0;
+        color: $white;
+        cursor: pointer;
+    }
+    .search {
+        position: relative;
+        width: 30px;
+        height: 50px;
+        margin-right: 1.4rem;
+        input#search {
+            width: 0;
+            height: 50px;
+            border: none;
+            font-size: .9rem;
+            @include border-radius(0);
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 0 1.5rem 0 1rem;
+            background-color: transparent;
+            @include transition(width .5s ease);
+            z-index: 1;
+            &:focus,
+            &:active {
+                outline: none;
+                width: 456px;
+                background-color: $white;
+                + .search-icon {
+                    z-index: 1;
+                    color: $black;
+                }
+            }
+        }
+        &:hover {
+            input#search {
+                width: 456px;
+                background-color: $white;
+            }   
+            .search-icon {
+                z-index: 1;
+                color: $black;
+            }
+        }
+    }
+}
+  
 
 
 

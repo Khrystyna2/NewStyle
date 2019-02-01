@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,18 +17,19 @@
     <!-- main style -->
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <!-- header start -->
     <header class="header">
-         <div class="header-image">
+        <div class="header-image">
             <div class="slider-header">
                 <div class="slider-header__item" style="background-image: url(image/index/banner.png)"></div>
                 <div class="slider-header__item" style="background-color: #ccc"></div>
                 <div class="slider-header__item" style="background-image: url(image/index/banner.png)"></div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
+        <div class="container h-100">
+            <div class="row justify-content-center">
                 <div class="col-12">
                     <div class="header-menu">
                         <div class="language">РУС</div>
@@ -82,35 +84,545 @@
                                 </li>
                             </ul>
                         </nav>
-                        <a href="tel:+380956663232" class="phone">+38 (095) 666-32-32</a>
+                        <div class="group-box">
+                            <div class="search">
+                                <input type="search" id="search" placeholder="Поиск по сайту..." />
+                                <span class="search-icon"><i class="fa fa-search"></i></span>
+                            </div>
+                            <a href="tel:+380956663232" class="phone">+38 (095) 666-32-32</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="header-text">
+                        <h1 class="header-text__title">Новый Стиль.<br>
+                            Каждому стилю - Своя дверь</h1>
+                        <p>Гармонично подобранный интерьер в загородном доме или квартире<br>
+                            обеспечивает человеку благоприятные условия для его жизнедеятельности</p>
+                        <a href="#" class="btn-border-white header__btn">Перейти в каталог</a>
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="header-text">
-                        <h1 class="header-text__title">Новый Стиль.<br>
-                                Каждому стилю - Своя дверь</h1>
-                                <p>Гармонично подобранный интерьер в загородном доме или квартире<br>
-                                        обеспечивает человеку благоприятные условия для его жизнедеятельности</p>
-                                        <a href="#" class="btn-border-white header__btn">Перейти в каталог</a>
-                    </div>
+                    <ul class="social-link social-link__header">
+                        <li class="social-link__item">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11.912" height="22.031" viewBox="0 0 11.912 22.031">
+                                    <g id="facebook-logo_1_" data-name="facebook-logo (1)" transform="translate(0)">
+                                        <path id="Path_4" data-name="Path 4" d="M18.583,0,15.726,0c-3.21,0-5.284,2.128-5.284,5.422v2.5H7.569a.449.449,0,0,0-.449.449v3.622a.449.449,0,0,0,.449.449h2.873v9.14a.449.449,0,0,0,.449.449h3.748a.449.449,0,0,0,.449-.449v-9.14h3.359a.449.449,0,0,0,.449-.449V8.371a.45.45,0,0,0-.449-.449h-3.36V5.8c0-1.019.243-1.536,1.57-1.536h1.925a.449.449,0,0,0,.449-.449V.454A.449.449,0,0,0,18.583,0Z"
+                                            transform="translate(-7.12)" fill="#fff" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-link__item">
+                            <a href="#">
+                                <svg id="youtube-logo" xmlns="http://www.w3.org/2000/svg" width="20.066" height="24.079"
+                                    viewBox="0 0 20.066 24.079">
+                                    <path id="YouTube" d="M24.473,17.613H23.151l.006-.768a.623.623,0,0,1,.622-.62h.084a.624.624,0,0,1,.624.62Zm-4.957-1.645a.565.565,0,0,0-.609.5V20.2a.622.622,0,0,0,1.221,0V16.469A.565.565,0,0,0,19.516,15.968Zm8.05-2.088v7.1a3.2,3.2,0,0,1-3.283,3.1h-13.5a3.2,3.2,0,0,1-3.283-3.1v-7.1a3.2,3.2,0,0,1,3.283-3.1h13.5A3.2,3.2,0,0,1,27.566,13.88ZM11.684,21.753V14.272h1.674V13.164l-4.461-.007v1.09l1.393,0v7.5ZM16.7,15.386H15.3v3.995a7.08,7.08,0,0,1,0,.969c-.113.31-.623.639-.822.033a7.95,7.95,0,0,1,0-.975l-.006-4.022H13.083l0,3.959c0,.607-.014,1.059,0,1.265.034.363.022.786.359,1.028a1.685,1.685,0,0,0,2.132-.714l0,.825H16.7V15.386Zm4.463,4.575,0-3.325c0-1.267-.949-2.026-2.236-1l.006-2.472-1.394,0L17.53,21.7l1.146-.017.1-.531C20.245,22.493,21.166,21.573,21.164,19.961Zm4.367-.441-1.046.006c0,.041,0,.089,0,.142v.584a.571.571,0,0,1-.572.567h-.2a.571.571,0,0,1-.572-.567V18.716h2.4v-.9a14.226,14.226,0,0,0-.071-1.694c-.171-1.192-1.844-1.381-2.689-.771a1.575,1.575,0,0,0-.585.788A4.436,4.436,0,0,0,22,17.542v1.983C22,22.821,26.008,22.355,25.53,19.52ZM20.164,8.757a.95.95,0,0,0,.336.424.972.972,0,0,0,.571.158.888.888,0,0,0,.535-.166,1.282,1.282,0,0,0,.391-.5l-.026.547h1.555V2.606H22.3V7.753a.51.51,0,0,1-1.02,0V2.606H20V7.067c0,.568.01.947.027,1.139A1.918,1.918,0,0,0,20.164,8.757ZM15.451,5.022a5.5,5.5,0,0,1,.158-1.488A1.592,1.592,0,0,1,17.235,2.35a1.929,1.929,0,0,1,.925.209,1.542,1.542,0,0,1,.6.543,2.141,2.141,0,0,1,.288.689,5.492,5.492,0,0,1,.078,1.083V6.546A9.056,9.056,0,0,1,19.05,7.9a2.142,2.142,0,0,1-.307.8,1.454,1.454,0,0,1-.6.55,1.91,1.91,0,0,1-.844.177,2.344,2.344,0,0,1-.9-.151,1.234,1.234,0,0,1-.574-.459,2.036,2.036,0,0,1-.292-.742,7.147,7.147,0,0,1-.086-1.3V5.022Zm1.218,2.627a.621.621,0,1,0,1.236,0V4.128a.621.621,0,1,0-1.236,0Zm-4.3,1.778h1.467l0-5.073L15.567.009h-1.6l-.922,3.228L12.106,0H10.518l1.844,4.357Z"
+                                        transform="translate(-7.5)" fill="#fff" />
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li class="social-link__item">
+                            <a href="#">
+                                <svg id="instagram_2_" data-name="instagram (2)" xmlns="http://www.w3.org/2000/svg"
+                                    width="22.418" height="22.417" viewBox="0 0 22.418 22.417">
+                                    <g id="Group_36" data-name="Group 36">
+                                        <g id="Group_35" data-name="Group 35">
+                                            <path id="Path_5" data-name="Path 5" d="M15.905,0H6.512A6.519,6.519,0,0,0,0,6.512v9.394a6.519,6.519,0,0,0,6.512,6.512h9.394a6.519,6.519,0,0,0,6.512-6.512V6.512A6.519,6.519,0,0,0,15.905,0Zm4.76,15.905a4.766,4.766,0,0,1-4.76,4.761H6.512a4.766,4.766,0,0,1-4.761-4.76V6.512A4.766,4.766,0,0,1,6.512,1.751h9.394a4.766,4.766,0,0,1,4.761,4.761Z"
+                                                fill="#fff" />
+                                        </g>
+                                    </g>
+                                    <g id="Group_38" data-name="Group 38" transform="translate(5.166 5.166)">
+                                        <g id="Group_37" data-name="Group 37">
+                                            <path id="Path_6" data-name="Path 6" d="M13.187,7.145a6.042,6.042,0,1,0,6.042,6.042A6.049,6.049,0,0,0,13.187,7.145Zm0,10.333a4.291,4.291,0,1,1,4.291-4.291A4.3,4.3,0,0,1,13.187,17.477Z"
+                                                transform="translate(-7.145 -7.145)" fill="#fff" />
+                                        </g>
+                                    </g>
+                                    <g id="Group_40" data-name="Group 40" transform="translate(16.463 4.203)">
+                                        <g id="Group_39" data-name="Group 39">
+                                            <ellipse id="Ellipse_8" data-name="Ellipse 8" cx="0.876" cy="0.876" rx="0.876"
+                                                ry="0.876" fill="#fff" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-       
+
     </header>
     <!-- header end -->
 
-    <main>
-
+    <main class="index">
+        <section class="index-collections">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-xl-10">
+                        <div class="info">
+                            <div class="info-box">
+                                <div class="info-box__item">
+                                    <h2>13</h2>
+                                    Коллекций
+                                </div>
+                                <div class="info-box__item">
+                                    <h2>200</h2>
+                                    Моделей дверей
+                                </div>
+                                <div class="info-box__item">
+                                    <h2>27</h2>
+                                    Видов покрытия
+                                </div>
+                            </div>
+                            <p>Наша продукция поставляется в более чем 20 стран мира. Она хорошо знакома жителям
+                                Европы, Азии, Ближнего Востока, Африки и даже Северной Америки. Производственные
+                                мощности завода – более 6000 полотен в сутки – позволяют без труда обеспечивать
+                                постоянно растущий спрос на расширяющихся рынках сбыта.</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="select-collections">
+                            <div class="select-collections__box">
+                                <div class="btn-select-collections">
+                                    <img src="icons/icon-catalog-black.svg" alt="">
+                                    Выберите коллекцию:
+                                </div>
+                                <ul id="nav-tabs" class="nav-tabs">
+                                    <li class="nav-tabs__items active">L</li>
+                                    <li class="nav-tabs__items">М</li>
+                                    <li class="nav-tabs__items">Э</li>
+                                    <li class="nav-tabs__items">Н</li>
+                                    <li class="nav-tabs__items">И</li>
+                                    <li class="nav-tabs__items">М</li>
+                                    <li class="nav-tabs__items">Ф</li>
+                                    <li class="nav-tabs__items">С</li>
+                                    <li class="nav-tabs__items">Д</li>
+                                    <li class="nav-tabs__items">К</li>
+                                    <li class="nav-tabs__items">Э</li>
+                                    <li class="nav-tabs__items">Р</li>
+                                    <li class="nav-tabs__items">Т</li>
+                                    <li class="nav-tabs__items">И</li>
+                                </ul>
+                            </div>
+                            <div class="box-tabs-content">
+                                <div id="tabs-content" class="tabs-content">
+                                    <div class="tabs-content__info active">
+                                        <div class="collections">
+                                            <img src="image/index/Race.png" alt="" class="collections__image">
+                                            <div class="collections__info">
+                                                <h3 class="collections__info-title">Light ot tm liberty doors</h3>
+                                                <p>Воплощение накопленных знаний и опыта сотрудников фабрики дверей
+                                                    «Новый стиль», торжество вкуса и качества в одной серии</p>
+                                                <ul class="collections__info-color">
+                                                    <li><img src="image/index/1.svg" alt=""></li>
+                                                    <li><img src="image/index/2.svg" alt=""></li>
+                                                    <li><img src="image/index/3.svg" alt=""></li>
+                                                    <li><img src="image/index/4.svg" alt=""></li>
+                                                    <li><img src="image/index/5.svg" alt=""></li>
+                                                </ul>
+                                                <a href="#" class="collections__info-btn btn-border-black">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs-content__info">2</div>
+                                    <div class="tabs-content__info">3</div>
+                                    <div class="tabs-content__info">4</div>
+                                    <div class="tabs-content__info">5</div>
+                                    <div class="tabs-content__info">6</div>
+                                    <div class="tabs-content__info">7</div>
+                                    <div class="tabs-content__info">8</div>
+                                    <div class="tabs-content__info">9</div>
+                                    <div class="tabs-content__info">10</div>
+                                    <div class="tabs-content__info">11</div>
+                                    <div class="tabs-content__info">12</div>
+                                    <div class="tabs-content__info">13</div>
+                                    <div class="tabs-content__info">14</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-xl-10">
+                        <div class="choose-door">
+                            <div class="choose-door__desc">
+                                <p>Разнообразие конструкционного и декоративного исполнения продукции ТМ «Новый стиль»
+                                    даёт возможность широкого использования дверей для помещений любого типа и
+                                    назначенияДля производства дверных полотен ТМ «Новый Стиль» используются материалы
+                                    ведущих отечественных и зарубежных производителей, главное требование - высокое
+                                    качество сырья, что обеспечивается тщательным входящим контролем на предприятии.</p>
+                                <p>Сегодня с полной уверенностью можно утверждать,
+                                    что двери торговой марки «Новый Стиль» являются синонимом лидерства, надежности,
+                                    прогресса
+                                    и инноваций.</p>
+                            </div>
+                            <div class="choose-door__block">
+                                <h2 class="choose-door__title">Не знаете, какую дверь выбрать?</h2>
+                                <p>Предлагаем вам ознакомиться с нашим каталогом качественных,
+                                    уникальных, долговечных дверей нашего производства.</p>
+                                <a href="#" class="btn-border-black choose-door__btn">В каталог</a>
+                                <img src="image/index/door.png" alt="" class="choose-door__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="suggestions">
+                <div class="suggestions__item" style="background: url(image/index/image-1.png) no-repeat left center">
+                    <h3 class="suggestions__title">Двери</h3>
+                    <p>Сделано из качественных деревьев,
+                        европейской обробки</p>
+                    <span></span>
+                </div>
+                <div class="suggestions__item" style="background: url(image/index/image-2.png) no-repeat center center">
+                    <h3 class="suggestions__title">Фурнитура</h3>
+                    <p>Только лучший и дорогой метал
+                        для долговечной експлуатации</p>
+                    <span></span>
+                </div>
+                <div class="suggestions__item" style="background: url(image/index/image-3.png) no-repeat center right">
+                    <h3 class="suggestions__title">Погонажи</h3>
+                    <p>Оригинальная рамка для ваших дверей
+                        выготовленая нашими мастерами</p>
+                    <span></span>
+                </div>
+                <div class="suggestions__img">
+                    <div class="suggestions__img-big" style="background: url(image/index/image-1.png) no-repeat center center / cover"></div>
+                    <div class="suggestions__img-big" style="background: url(image/index/image-2.png) no-repeat center center / cover"></div>
+                    <div class="suggestions__img-big" style="background: url(image/index/image-3.png) no-repeat center center / cover"></div>
+                </div>
+            </div>
+        </section>
+        <section class="additional-suggestions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-5 offset-1">
+                        <h2 class="additional-suggestions__title">У нас есть все, что может
+                            вам понадобится
+                            для установки дверей</h2>
+                        <p><span>Плинтус</span> — декоративный и защитный элемент отделки помещений для сокрытия щели
+                            между полом и стеной, тяга, идущая по низу стены. Плинтус крепится к стене. Аналогичный
+                            элемент, крепящийся к полу ли потолку, называется галтелью. Деревянный плинтус производится
+                            из массива дерева и шпона, применяется для обрамления различного рода напольных покрытий.</p>
+                        <div class="additional-suggestions__nav-slider">
+                            <div class="additional-suggestions__nav-slider_item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="43.098" height="43.098" viewBox="0 0 43.098 43.098">
+                                    <g id="Group_124" transform="translate(-251.86 -4592.859)">
+                                        <path d="M42.087,0H.511A.492.492,0,0,0,0,.511V42.087a.492.492,0,0,0,.511.511h13.5a.492.492,0,0,0,.511-.511V18.445c0-4.43,3.024-8.051,6.773-8.051s6.773,3.621,6.773,8.051V42.087a.492.492,0,0,0,.511.511h13.5a.492.492,0,0,0,.511-.511V.511A.492.492,0,0,0,42.087,0ZM21.3,9.372c-4.3,0-7.8,4.089-7.8,9.073V41.576H11.416V17.125a9.883,9.883,0,1,1,19.766,0V41.533H29.095V18.445C29.095,13.418,25.6,9.372,21.3,9.372Zm20.277,32.2H32.2V17.125a10.905,10.905,0,0,0-21.81,0V41.533H1.022V1.022H41.533V41.576Z"
+                                            transform="translate(252.109 4593.109)" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="additional-suggestions__nav-slider_item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="43.5" height="43.5" viewBox="0 0 43.5 43.5">
+                                    <g id="Group_126" transform="translate(-271.602 -4560.603)">
+                                        <path d="M43,4.673V.459c0-.043,0-.043-.043-.086A.259.259,0,0,0,42.914.2a.042.042,0,0,1-.043-.043c0-.043-.043-.043-.086-.086a.594.594,0,0,0-.172-.129L42.57-.1h-.086c.043.043.043.043,0,.043H14.147a.529.529,0,0,0-.43.215L.086,20.11v.043c0,.043-.043.043-.043.086v4.343a.5.5,0,0,0,.516.516H9.03L.086,37.912v.043c-.043.043-.043.129-.086.172v.043H0v4.214a.5.5,0,0,0,.516.516H16.254a1.863,1.863,0,0,0,.215-.043l.043-.043.129-.129.043-.043,6.493-9.331V38.9a.5.5,0,0,0,.516.516h7.353a1.862,1.862,0,0,0,.215-.043l.043-.043.129-.129.043-.043L42.914,22.733a.622.622,0,0,0,.086-.3V15.251c0-.043,0-.043-.043-.086a.259.259,0,0,0-.043-.172.042.042,0,0,1-.043-.043c0-.043-.043-.043-.086-.086a.594.594,0,0,0-.172-.129l-.043-.043h-.086c-.043,0-.043-.043-.086-.043H36.12l6.794-9.761C42.957,4.888,43,4.759,43,4.673ZM14.448.975H25.757L12.642,19.852H1.5ZM1.032,24.066V20.927H11.868L9.675,24.066Zm12.212-3.225a.383.383,0,0,0,.215-.344L27,.975H41.452L16,37.7H1.548ZM1.032,38.729H15.695v3.139H1.032ZM24.209,32.15H30.53v6.278H24.209Zm7.353,5.16V31.978l.043-.043,10.32-15.007v5.5Zm3.827-21.543h6.063L30.745,31.118h-6.02L34.83,16.584ZM41.968,4.5,34.013,15.939,23.263,31.333v.043a.158.158,0,0,0-.043.129L16.77,40.75V38.385L30.487,18.6,41.968,2.136Z"
+                                            transform="translate(271.852 4560.953)" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="additional-suggestions__nav-slider_item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="51.301" height="51.31" viewBox="0 0 51.301 51.31">
+                                    <path id="Path_43" data-name="Path 43" d="M38.814,21.5V15.234a.552.552,0,0,0-.406-.56L30.036,6.216V.611a.6.6,0,0,0-.406-.56.536.536,0,0,0-.66.153L.2,28.99a.5.5,0,0,0-.2.459v6.267a.561.561,0,0,0,.3.509l8.473,8.559v5.553a.6.6,0,0,0,.406.56.456.456,0,0,0,.254.051.619.619,0,0,0,.457-.2L38.712,21.959A3.259,3.259,0,0,0,38.814,21.5Zm-10-19.361V6.267L1.218,34.136V29.7Zm.609,5.248,7.864,8L9.386,43.612,1.471,35.664ZM10,48.809V44.733l27.55-27.869v4.382Z"
+                                        transform="translate(0 0)" />
+                                    <path id="Path_44" data-name="Path 44" d="M70.449,46.138,64.665,40.3a.643.643,0,0,0-.457-.2.62.62,0,0,0-.457.2L40.615,63.642a.584.584,0,0,0,0,.863L46.4,70.339a.643.643,0,0,0,.457.2.551.551,0,0,0,.457-.2L70.449,47A.583.583,0,0,0,70.449,46.138ZM42.087,64.149a2.792,2.792,0,0,1,1.776-.609h0A3.633,3.633,0,0,1,46.4,64.657a3.313,3.313,0,0,1,.507,4.313Zm6.6,3.044a4.765,4.765,0,0,0-1.421-3.4,4.947,4.947,0,0,0-3.4-1.471H43.71l20.549-20.7,4.922,4.972Z"
+                                        transform="translate(-19.639 -19.542)" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="additional-suggestions__slider">
+                            <div class="additional-suggestions__slider-items">
+                                <img src="image/index/beseboard.png" alt="">
+                            </div>
+                            <div class="additional-suggestions__slider-items">
+                                <img src="image/index/image-1.png" alt="">
+                            </div>
+                            <div class="additional-suggestions__slider-items">
+                                <img src="image/index/image-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="slider-collection">
+                    <div class="slider-collection__item">
+                        <div class="row">
+                            <div class="col-12 col-md-8">
+                                <div class="slider-collection__block" style="background: url(image/index/image-slider-1.png) no-repeat center center / cover">
+                                    <div class="slider-collection__desc">
+                                        <h3>Новая коллекция 2019</h3>
+                                        <p>Дверей для вашей спальни</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="slider-collection__block" style="background: url(image/index/image-slider-2.png) no-repeat center center / cover">
+                                    <div class="slider-collection__desc">
+                                        <h3>Крепкие как сталь</h3>
+                                        <p>Выбор на долгие года</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-collection__item">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="slider-collection__block" style="background: url(image/index/image-slider-2.png) no-repeat center center / cover">
+                                    <div class="slider-collection__desc">
+                                        <h3>Крепкие как сталь</h3>
+                                        <p>Выбор на долгие года</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="slider-collection__block" style="background: url(image/index/image-slider-1.png) no-repeat center center / cover">
+                                    <div class="slider-collection__desc">
+                                        <h3>Новая коллекция 2019</h3>
+                                        <p>Дверей для вашей спальни</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-collection__item">
+                        <div class="row">
+                            <div class="col-12 col-md-8">
+                                <div class="slider-collection__block" style="background: url(image/index/image-slider-1.png) no-repeat center center / cover">
+                                    <div class="slider-collection__desc">
+                                        <h3>Новая коллекция 2019</h3>
+                                        <p>Дверей для вашей спальни</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="slider-collection__block" style="background: url(image/index/image-slider-2.png) no-repeat center center / cover">
+                                    <div class="slider-collection__desc">
+                                        <h3>Крепкие как сталь</h3>
+                                        <p>Выбор на долгие года</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-collection__item">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="slider-collection__block" style="background: url(image/index/image-slider-2.png) no-repeat center center / cover">
+                                    <div class="slider-collection__desc">
+                                        <h3>Крепкие как сталь</h3>
+                                        <p>Выбор на долгие года</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="slider-collection__block" style="background: url(image/index/image-slider-1.png) no-repeat center center / cover">
+                                    <div class="slider-collection__desc">
+                                        <h3>Новая коллекция 2019</h3>
+                                        <p>Дверей для вашей спальни</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-collection__item">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="slider-collection__block" style="background: url(image/index/image-slider-2.png) no-repeat center center / cover">
+                                    <div class="slider-collection__desc">
+                                        <h3>Крепкие как сталь</h3>
+                                        <p>Выбор на долгие года</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="slider-collection__block" style="background: url(image/index/image-slider-1.png) no-repeat center center / cover">
+                                    <div class="slider-collection__desc">
+                                        <h3>Новая коллекция 2019</h3>
+                                        <p>Дверей для вашей спальни</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="slider-video">
+                            <div class="slider-video__item">
+                                <iframe src="https://www.youtube.com/embed/9RwMOWIbM_g" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="slider-video__item">
+                                <iframe src="https://www.youtube.com/embed/9RwMOWIbM_g" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <!-- <div class="slider-video__item">
+                                <iframe src="https://www.youtube.com/embed/9RwMOWIbM_g" frameborder="0" allowfullscreen></iframe>
+                            </div> -->
+                        </div>
+                        <a href="#" class="btn-black slider-video__btn">Смотреть больше</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="map" id="map">
+                <div class="contact">
+                    <h3>Наши контакты</h3>
+                    <ul class="contact__list">
+                        <li>
+                            <img src="icons/location.svg" alt="">
+                            <p>улица Кольцова 57, Херсон, Украина</p>
+                        </li>
+                        <li>
+                            <img src="icons/phone-black.svg" alt="">
+                            <p>+38 (095) 666-32-32</p>
+                        </li>
+                        <li>
+                            <img src="icons/letter-black.svg" alt="">
+                            <p>info@doors.net</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer start -->
     <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-xl-10">
+                    <nav>
+                        <ul class="footer-menu">
+                            <li>
+                                <h4 class="footer-menu__title">О компании</h4>
+                                <ul>
+                                    <li><a href="#">Наша миссия</a></li>
+                                    <li><a href="#">Наши цели</a></li>
+                                    <li><a href="#">Наши достижения</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4 class="footer-menu__title">Каталог</h4>
+                                <ul>
+                                    <li><a href="#">Двери</a></li>
+                                    <li><a href="#">Погонаж</a></li>
+                                    <li><a href="#">Фурнитура</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4 class="footer-menu__title">Информация</h4>
+                                <ul>
+                                    <li><a href="#">Новости компании</a></li>
+                                    <li><a href="#">Полезное</a></li>
+                                    <li><a href="#">Видео</a></li>
+                                    <li><a href="#">Скачать</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4 class="footer-menu__title">Парнерам</h4>
+                                <ul>
+                                    <li><a href="#">Личный кабинет</a></li>
+                                    <li><a href="#">Как стать партнером?</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4 class="footer-menu__title">Клиентам</h4>
+                                <ul>
+                                    <li><a href="#">Где купить?</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4 class="footer-menu__title">Контакты</h4>
+                                <ul>
+                                    <li><a href="#">Контакты Украина</a></li>
+                                    <li><a href="#">Контакты экспорт</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-xl-10">
+                    <div class="footer-block">
+                        <ul class="social-link">
+                            <li class="social-link__item">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.912" height="22.031" viewBox="0 0 11.912 22.031">
+                                        <g id="facebook-logo_1_" data-name="facebook-logo (1)" transform="translate(0)">
+                                            <path id="Path_4" data-name="Path 4" d="M18.583,0,15.726,0c-3.21,0-5.284,2.128-5.284,5.422v2.5H7.569a.449.449,0,0,0-.449.449v3.622a.449.449,0,0,0,.449.449h2.873v9.14a.449.449,0,0,0,.449.449h3.748a.449.449,0,0,0,.449-.449v-9.14h3.359a.449.449,0,0,0,.449-.449V8.371a.45.45,0,0,0-.449-.449h-3.36V5.8c0-1.019.243-1.536,1.57-1.536h1.925a.449.449,0,0,0,.449-.449V.454A.449.449,0,0,0,18.583,0Z"
+                                                transform="translate(-7.12)" fill="#000" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-link__item">
+                                <a href="#">
+                                    <svg id="youtube-logo" xmlns="http://www.w3.org/2000/svg" width="20.066" height="24.079"
+                                        viewBox="0 0 20.066 24.079">
+                                        <path id="YouTube" d="M24.473,17.613H23.151l.006-.768a.623.623,0,0,1,.622-.62h.084a.624.624,0,0,1,.624.62Zm-4.957-1.645a.565.565,0,0,0-.609.5V20.2a.622.622,0,0,0,1.221,0V16.469A.565.565,0,0,0,19.516,15.968Zm8.05-2.088v7.1a3.2,3.2,0,0,1-3.283,3.1h-13.5a3.2,3.2,0,0,1-3.283-3.1v-7.1a3.2,3.2,0,0,1,3.283-3.1h13.5A3.2,3.2,0,0,1,27.566,13.88ZM11.684,21.753V14.272h1.674V13.164l-4.461-.007v1.09l1.393,0v7.5ZM16.7,15.386H15.3v3.995a7.08,7.08,0,0,1,0,.969c-.113.31-.623.639-.822.033a7.95,7.95,0,0,1,0-.975l-.006-4.022H13.083l0,3.959c0,.607-.014,1.059,0,1.265.034.363.022.786.359,1.028a1.685,1.685,0,0,0,2.132-.714l0,.825H16.7V15.386Zm4.463,4.575,0-3.325c0-1.267-.949-2.026-2.236-1l.006-2.472-1.394,0L17.53,21.7l1.146-.017.1-.531C20.245,22.493,21.166,21.573,21.164,19.961Zm4.367-.441-1.046.006c0,.041,0,.089,0,.142v.584a.571.571,0,0,1-.572.567h-.2a.571.571,0,0,1-.572-.567V18.716h2.4v-.9a14.226,14.226,0,0,0-.071-1.694c-.171-1.192-1.844-1.381-2.689-.771a1.575,1.575,0,0,0-.585.788A4.436,4.436,0,0,0,22,17.542v1.983C22,22.821,26.008,22.355,25.53,19.52ZM20.164,8.757a.95.95,0,0,0,.336.424.972.972,0,0,0,.571.158.888.888,0,0,0,.535-.166,1.282,1.282,0,0,0,.391-.5l-.026.547h1.555V2.606H22.3V7.753a.51.51,0,0,1-1.02,0V2.606H20V7.067c0,.568.01.947.027,1.139A1.918,1.918,0,0,0,20.164,8.757ZM15.451,5.022a5.5,5.5,0,0,1,.158-1.488A1.592,1.592,0,0,1,17.235,2.35a1.929,1.929,0,0,1,.925.209,1.542,1.542,0,0,1,.6.543,2.141,2.141,0,0,1,.288.689,5.492,5.492,0,0,1,.078,1.083V6.546A9.056,9.056,0,0,1,19.05,7.9a2.142,2.142,0,0,1-.307.8,1.454,1.454,0,0,1-.6.55,1.91,1.91,0,0,1-.844.177,2.344,2.344,0,0,1-.9-.151,1.234,1.234,0,0,1-.574-.459,2.036,2.036,0,0,1-.292-.742,7.147,7.147,0,0,1-.086-1.3V5.022Zm1.218,2.627a.621.621,0,1,0,1.236,0V4.128a.621.621,0,1,0-1.236,0Zm-4.3,1.778h1.467l0-5.073L15.567.009h-1.6l-.922,3.228L12.106,0H10.518l1.844,4.357Z"
+                                            transform="translate(-7.5)" fill="#000" />
+                                    </svg>
 
+                                </a>
+                            </li>
+                            <li class="social-link__item">
+                                <a href="#">
+                                    <svg id="instagram_2_" data-name="instagram (2)" xmlns="http://www.w3.org/2000/svg"
+                                        width="22.418" height="22.417" viewBox="0 0 22.418 22.417">
+                                        <g id="Group_36" data-name="Group 36">
+                                            <g id="Group_35" data-name="Group 35">
+                                                <path id="Path_5" data-name="Path 5" d="M15.905,0H6.512A6.519,6.519,0,0,0,0,6.512v9.394a6.519,6.519,0,0,0,6.512,6.512h9.394a6.519,6.519,0,0,0,6.512-6.512V6.512A6.519,6.519,0,0,0,15.905,0Zm4.76,15.905a4.766,4.766,0,0,1-4.76,4.761H6.512a4.766,4.766,0,0,1-4.761-4.76V6.512A4.766,4.766,0,0,1,6.512,1.751h9.394a4.766,4.766,0,0,1,4.761,4.761Z"
+                                                    fill="#000" />
+                                            </g>
+                                        </g>
+                                        <g id="Group_38" data-name="Group 38" transform="translate(5.166 5.166)">
+                                            <g id="Group_37" data-name="Group 37">
+                                                <path id="Path_6" data-name="Path 6" d="M13.187,7.145a6.042,6.042,0,1,0,6.042,6.042A6.049,6.049,0,0,0,13.187,7.145Zm0,10.333a4.291,4.291,0,1,1,4.291-4.291A4.3,4.3,0,0,1,13.187,17.477Z"
+                                                    transform="translate(-7.145 -7.145)" fill="#000" />
+                                            </g>
+                                        </g>
+                                        <g id="Group_40" data-name="Group 40" transform="translate(16.463 4.203)">
+                                            <g id="Group_39" data-name="Group 39">
+                                                <ellipse id="Ellipse_8" data-name="Ellipse 8" cx="0.876" cy="0.876" rx="0.876"
+                                                    ry="0.876" fill="#000" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>© 2018. Фабрика дверей "Новый стиль". Все права защищены</p>
+                        <ul class="link-store">
+                            <li><a href="#"><img src="icons/app store.svg" alt=""></a></li>
+                            <li><a href="#"><img src="icons/google play.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- footer end -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -167,7 +167,7 @@
 
     content: '';
     text-align: center;
-    background-image: url(../icons/dots-slider.svg);
+    /* background-image: url(../icons/dots-slider.svg); */
     background-repeat: no-repeat;
     width: 14px;
     height: 10px;
@@ -180,5 +180,5 @@
 }
 .slick-dots li.slick-active button:before
 {
-    background-image: url(../icons/dots-slider-active.svg);
+    /* background-image: url(../icons/dots-slider-active.svg); */
 }
