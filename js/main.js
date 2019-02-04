@@ -140,7 +140,7 @@ $(document).ready(function () {
             autoplaySpeed: 2000,
             responsive: [
               {
-                breakpoint: 992,
+                breakpoint: 568,
                 settings: {
                   arrows: false
                 }
@@ -184,7 +184,7 @@ $(document).ready(function () {
             speed: 1000,
             responsive: [
               {
-                breakpoint: 992,
+                breakpoint: 568,
                 settings: {
                   arrows: false
                 }

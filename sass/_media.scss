@@ -172,10 +172,10 @@
     }
 
     .menu-btn {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         background: url(../icons/btn-menu-black.svg) no-repeat center center;
-        background-size: 40px;
+        background-size: 30px;
         margin-left: 20px;
     }
 
@@ -404,7 +404,7 @@
     }
 
     .slider-video {
-        padding-bottom: 5rrem;
+        padding-bottom: 5rem;
         &__item{
             height: 350px;
         }
@@ -544,6 +544,7 @@
         }
     }
 }
+
 @media only screen and (max-width: 567.8px) {
     .slick-counter {
         display: none;
@@ -701,4 +702,55 @@
         }
     }
 
+}
+
+@media only screen and (max-height: 566px) {
+
+    .header {
+        padding-top: 30px;
+    }
+    // first screen
+    .first-screen {
+        height: 500px;
+        margin-top: -136px;
+        padding-bottom: 1rem;
+        &::after {
+            height:0;
+            width: 0;
+            border-left: none;    
+        }
+    }
+
+    .first-screen-image {
+        .slider-first-screen {
+            height: 100%;
+            width: 100%;
+            &__item {
+                height: 500px;
+            }
+            .slick-dots {
+                li {
+                    margin: 1rem 0;;
+                }
+            }        
+        }
+        .slick-counter {
+            bottom: 1.6rem !important;
+        }
+    }
+
+    .first-screen-text {
+        margin-top: 4rem;
+        &__title {
+            font-size: 1.5rem;
+        }
+        .first-screen__btn {
+            margin: 2rem auto 0;
+            &::before {
+                height: 0;
+                border-left: none;
+            }
+        }
+    }
+    // first screen end
 }
