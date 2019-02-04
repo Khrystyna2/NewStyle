@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 
     $(function () {
-        $('.slider-header').on('init', function (event, slick) {
+        $('.slider-first-screen').on('init', function (event, slick) {
             $(this).append('<div class="slick-counter"><span class="current"></span><span class="total"></span></div>');
             let findBlock = $(this).find('.total');
             let findCurrentBlock = $(this).find('.current');
@@ -28,7 +28,15 @@ $(document).ready(function () {
             arrows: false,
             autoplaySpeed: 2000,
             focusOnSelect: false,
-            speed: 1000
+            speed: 1000,
+            responsive: [
+              {
+                breakpoint: 992,
+                settings: {
+                  dots: false
+                }
+              }
+            ]
         })
         .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
             // console.log(nextSlide);
@@ -129,7 +137,15 @@ $(document).ready(function () {
             // autoplay: true,
             dots: false,
             arrows: true,
-            autoplaySpeed: 2000
+            autoplaySpeed: 2000,
+            responsive: [
+              {
+                breakpoint: 992,
+                settings: {
+                  arrows: false
+                }
+              }
+            ]
         })
         .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
             let findCurrentBlock = $(this).find('.current');
@@ -165,7 +181,15 @@ $(document).ready(function () {
             arrows: true,
             autoplaySpeed: 2000,
             focusOnSelect: false,
-            speed: 1000
+            speed: 1000,
+            responsive: [
+              {
+                breakpoint: 992,
+                settings: {
+                  arrows: false
+                }
+              }
+            ]
         })
         .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
             let indexNextSlider = nextSlide + 1;
@@ -178,4 +202,54 @@ $(document).ready(function () {
             }
         });
     });
+
+    //mobil menu
+    $('.menu-btn').click(function() {
+        $('.mobile-screen').toggleClass('open');
+        $('.header').toggleClass('bg-white');
+    });
+
+    $('.btn-select-collections').click(function(){
+        $('.nav-tabs').slideToggle();
+    });
+
+    $('.footer-menu__title').click(function(){
+        $(this).next('ul').slideToggle();
+        $(this).closest('li').siblings('li').find('ul').slideUp();
+    });
+
+     // slider 
+     function slideDetect() {
+        $('.info-box').slick({
+            dots: false,
+            arrows: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [{
+                breakpoint: 99999,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true
+                }
+            }
+            ]
+        });
+    }
+
+    slideDetect();
+
+    $(window).resize(function () {
+        if ($(window).width() > 550) {
+            $('.info-box').slick('unslick');
+        }
+        else if ($(window).width() <= 550) {
+            slideDetect()
+        }
+    });
+    // slider 
 });
