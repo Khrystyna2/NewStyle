@@ -1,5 +1,5 @@
 .header {
-    padding-top: 52px;
+    // padding-top: 52px;
     position: relative;
     z-index: 10;
 }
@@ -36,14 +36,76 @@
             color: $white;
         }
     }
+    .header-fixed {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.header-fixed.sticky {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: $white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    @include transition(animate .5s);
+    @include animate(move .4s ease);
+}
+
+@keyframes move {
+    from {
+        @include transform(translateY(-100%));
+      }
+      to { 
+        @include transform(translateY(0));        
+      }  
+}
+
+.sticky {
+    .header-menu {
+        color: $black;
+        .phone {
+            color: $black;
+        }
+        .language {
+            color: $black;
+            li{
+                border: 1px solid $black;
+            }
+            &__sub{
+                li{
+                    background-color: $black;
+                    >a {
+                        color: $white;
+                    }
+                }
+            }
+        }    
+    }
+    .menu__item_logo {
+        .logo {
+            background: url(../image/logo-black.svg) no-repeat center center;
+            background-size: 100%;
+        }
+    }
+    .group-box {
+        .search-icon {
+            color: $black;
+        }
+    }
 }
 
 .header-menu {
+    padding: 2.3rem 0 .5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: $black;
     position: relative;
+    @include transition(.3s);
     .phone {
         color: $black;
     }
