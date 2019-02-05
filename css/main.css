@@ -218,7 +218,6 @@ a:hover {
 .header {
   position: relative;
   z-index: 10;
-  background-color: red;
 }
 
 .color-white .header-menu {
