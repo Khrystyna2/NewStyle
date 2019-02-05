@@ -5,6 +5,10 @@ $(document).ready(function () {
         $(this).closest('li').siblings('li').find('ul').slideUp();
     });
 
+    $('.language>li>a').click(function(){
+        $(this).next('ul').slideToggle();
+    });
+
 
     $(function () {
         $('.slider-first-screen').on('init', function (event, slick) {

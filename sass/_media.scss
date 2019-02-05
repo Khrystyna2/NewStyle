@@ -59,6 +59,10 @@
     .container {
         max-width: 1720px;
     }
+
+    .first-screen {
+        margin-top: -174px;
+    }
 }
 
 @media only screen and (max-width: 1199.8px) {
@@ -165,7 +169,7 @@
             width: 5.9rem;
             height: 3.4rem;
         }
-        .language,
+        #language,
         .phone {
             display: none;
         }
@@ -180,9 +184,9 @@
     }
 
     .mobile-screen {
-        position: absolute;
+        position: fixed;
         left: 0;
-        top: 58px;
+        bottom: 0;
         background-color: $white;
         width: 100%;
         height: calc(100vh - 84px);
@@ -255,11 +259,21 @@
         }
         &__language {
             margin-top: 1.4rem;
-            display: inline-block !important;
-            border: 1px solid $black !important;
-            padding: 12px 9px;
             font-size: 1rem;
             color: $black !important;
+            display: inline-block !important;
+            li{
+                border:none;
+            }
+            &__sub{
+                display: none;
+                li{
+                    background-color: transparent;
+                    >a {
+                        color: $black;
+                    }
+                }
+            }
         }
     }
 

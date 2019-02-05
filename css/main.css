@@ -188,7 +188,13 @@ a:hover {
   .color-white .header-menu .phone {
     color: #fff; }
   .color-white .header-menu .language {
-    border: 1px solid #fff; }
+    color: #fff; }
+    .color-white .header-menu .language li {
+      border: 1px solid #fff; }
+    .color-white .header-menu .language__sub li {
+      background-color: #fff; }
+      .color-white .header-menu .language__sub li > a {
+        color: #000; }
 .color-white .menu__item_logo .logo {
   background: url(../image/logo.svg) no-repeat center center;
   background-size: 100%; }
@@ -201,14 +207,34 @@ a:hover {
   justify-content: space-between;
   color: #000;
   position: relative; }
-  .header-menu .language {
-    border: 1px solid #000;
-    padding: 12px 9px;
-    font-size: 0.7rem; }
   .header-menu .phone {
     color: #000; }
   .header-menu .mobil-logo {
     display: none; }
+
+.language {
+  font-size: 0.7rem;
+  color: #000;
+  position: relative; }
+  .language li {
+    border: 1px solid #000;
+    width: 2.1rem;
+    height: 2.1rem;
+    text-align: center; }
+    .language li > a {
+      color: inherit;
+      width: 100%;
+      display: block;
+      padding: .5rem 0; }
+  .language__sub {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none; }
+    .language__sub li {
+      background-color: #000; }
+      .language__sub li > a {
+        color: #fff; }
 
 .mobile-screen__phone, .mobile-screen__language, .mobile-screen__social-link {
   display: none; }
@@ -482,7 +508,7 @@ a:hover {
   justify-content: space-between; }
   .index-collections .info-box__item {
     width: 245px;
-    height: 10.6rem;
+    height: 8.6rem;
     background: url(../image/index/border-1.png) no-repeat center center/contain;
     text-align: center;
     padding-top: 40px;
@@ -885,7 +911,10 @@ a:hover {
     font-size: 23px; }
 
   .container {
-    max-width: 1720px; } }
+    max-width: 1720px; }
+
+  .first-screen {
+    margin-top: -174px; } }
 @media only screen and (max-width: 1199.8px) {
   html {
     font-size: 16px; }
@@ -951,7 +980,7 @@ a:hover {
     display: block;
     width: 5.9rem;
     height: 3.4rem; }
-  .header-menu .language,
+  .header-menu #language,
   .header-menu .phone {
     display: none; }
 
@@ -963,9 +992,9 @@ a:hover {
     margin-left: 20px; }
 
   .mobile-screen {
-    position: absolute;
+    position: fixed;
     left: 0;
-    top: 58px;
+    bottom: 0;
     background-color: #fff;
     width: 100%;
     height: calc(100vh - 84px);
@@ -1023,11 +1052,17 @@ a:hover {
       margin-top: 1.8rem; }
     .mobile-screen__language {
       margin-top: 1.4rem;
-      display: inline-block !important;
-      border: 1px solid #000 !important;
-      padding: 12px 9px;
       font-size: 1rem;
-      color: #000 !important; }
+      color: #000 !important;
+      display: inline-block !important; }
+      .mobile-screen__language li {
+        border: none; }
+      .mobile-screen__language__sub {
+        display: none; }
+        .mobile-screen__language__sub li {
+          background-color: transparent; }
+          .mobile-screen__language__sub li > a {
+            color: #000; }
 
   .index > section {
     margin-bottom: 3.5rem; }

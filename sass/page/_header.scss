@@ -11,8 +11,19 @@
             color: $white;
         }
         .language {
-            border: 1px solid $white;
-        }
+            color: $white;
+            li{
+                border: 1px solid $white;
+            }
+            &__sub{
+                li{
+                    background-color: $white;
+                    >a {
+                        color: $black;
+                    }
+                }
+            }
+        }    
     }
     .menu__item_logo {
         .logo {
@@ -33,16 +44,41 @@
     justify-content: space-between;
     color: $black;
     position: relative;
-    .language {
-        border: 1px solid $black;
-        padding: 12px 9px;
-        font-size: 0.7rem;
-    }
     .phone {
         color: $black;
     }
     .mobil-logo {
         display: none;
+    }
+}
+
+.language {
+    font-size: 0.7rem;
+    color: $black;
+    position: relative;
+    li{
+        border: 1px solid $black;
+        width: 2.1rem;
+        height: 2.1rem;
+        text-align: center;
+        > a {
+            color: inherit;
+            width: 100%;
+            display: block;
+            padding: .5rem 0;
+        }
+    }
+    &__sub{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        display: none;
+        li{
+            background-color: $black;
+            >a {
+                color: $white;
+            }
+        }
     }
 }
 
