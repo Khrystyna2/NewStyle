@@ -1,6 +1,7 @@
 .header {
     position: relative;
     z-index: 10;
+    background-color: red;
 }
 
 .color-white {
@@ -35,6 +36,39 @@
             color: $white;
         }
     }
+    .sticky {
+        .header-menu {
+            color: $black;
+            .phone {
+                color: $black;
+            }
+            .language {
+                color: $black;
+                li{
+                    border: 1px solid $black;
+                }
+                &__sub{
+                    li{
+                        background-color: $black;
+                        >a {
+                            color: $white;
+                        }
+                    }
+                }
+            }    
+        }
+        .menu__item_logo {
+            .logo {
+                background: url(../image/logo-black.svg) no-repeat center center;
+                background-size: 100%;
+            }
+        }
+        .group-box {
+            .search-icon {
+                color: $black;
+            }
+        }
+    }
 }
 
 .header.sticky {
@@ -55,40 +89,6 @@
       to { 
         @include transform(translateY(0));        
       }  
-}
-
-.sticky {
-    .header-menu {
-        color: $black;
-        .phone {
-            color: $black;
-        }
-        .language {
-            color: $black;
-            li{
-                border: 1px solid $black;
-            }
-            &__sub{
-                li{
-                    background-color: $black;
-                    >a {
-                        color: $white;
-                    }
-                }
-            }
-        }    
-    }
-    .menu__item_logo {
-        .logo {
-            background: url(../image/logo-black.svg) no-repeat center center;
-            background-size: 100%;
-        }
-    }
-    .group-box {
-        .search-icon {
-            color: $black;
-        }
-    }
 }
 
 .header-menu {

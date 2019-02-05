@@ -142,24 +142,25 @@
             background: url(../icons/btn-menu.svg) no-repeat center center;
             background-size: 40px;
         }
-    }
-    .sticky {
-        .header-menu {
-            .mobil-logo {
-                background: url(../image/logo-black.svg) no-repeat center center;
-                background-size: 96%;
-            }
-            .language {
-                li{
-                    border: none;
+        .sticky {
+            .header-menu {
+                .mobil-logo {
+                    background: url(../image/logo-black.svg) no-repeat center center;
+                    background-size: 96%;
                 }
-            }    
-        }
-        .menu-btn {
-            background: url(../icons/btn-menu-black.svg) no-repeat center center;
-            background-size: 40px;
+                .language {
+                    li{
+                        border: none;
+                    }
+                }    
+            }
+            .menu-btn {
+                background: url(../icons/btn-menu-black.svg) no-repeat center center;
+                background-size: 40px;
+            }
         }
     }
+
     .header-menu {
         .mobil-logo {
             background: url(../image/logo-black.svg) no-repeat center center;

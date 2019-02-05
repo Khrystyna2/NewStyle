@@ -218,6 +218,7 @@ a:hover {
 .header {
   position: relative;
   z-index: 10;
+  background-color: red;
 }
 
 .color-white .header-menu {
@@ -244,6 +245,31 @@ a:hover {
 }
 .color-white .group-box .search-icon {
   color: #fff;
+}
+.color-white .sticky .header-menu {
+  color: #000;
+}
+.color-white .sticky .header-menu .phone {
+  color: #000;
+}
+.color-white .sticky .header-menu .language {
+  color: #000;
+}
+.color-white .sticky .header-menu .language li {
+  border: 1px solid #000;
+}
+.color-white .sticky .header-menu .language__sub li {
+  background-color: #000;
+}
+.color-white .sticky .header-menu .language__sub li > a {
+  color: #fff;
+}
+.color-white .sticky .menu__item_logo .logo {
+  background: url(../image/logo-black.svg) no-repeat center center;
+  background-size: 100%;
+}
+.color-white .sticky .group-box .search-icon {
+  color: #000;
 }
 
 .header.sticky {
@@ -296,32 +322,6 @@ a:hover {
     -o-transform: translateY(0);
   }
 }
-.sticky .header-menu {
-  color: #000;
-}
-.sticky .header-menu .phone {
-  color: #000;
-}
-.sticky .header-menu .language {
-  color: #000;
-}
-.sticky .header-menu .language li {
-  border: 1px solid #000;
-}
-.sticky .header-menu .language__sub li {
-  background-color: #000;
-}
-.sticky .header-menu .language__sub li > a {
-  color: #fff;
-}
-.sticky .menu__item_logo .logo {
-  background: url(../image/logo-black.svg) no-repeat center center;
-  background-size: 100%;
-}
-.sticky .group-box .search-icon {
-  color: #000;
-}
-
 .header-menu {
   padding: 2.3rem 0 .5rem;
   display: -webkit-box;
@@ -1376,15 +1376,14 @@ a:hover {
     background: url(../icons/btn-menu.svg) no-repeat center center;
     background-size: 40px;
   }
-
-  .sticky .header-menu .mobil-logo {
+  .color-white .sticky .header-menu .mobil-logo {
     background: url(../image/logo-black.svg) no-repeat center center;
     background-size: 96%;
   }
-  .sticky .header-menu .language li {
+  .color-white .sticky .header-menu .language li {
     border: none;
   }
-  .sticky .menu-btn {
+  .color-white .sticky .menu-btn {
     background: url(../icons/btn-menu-black.svg) no-repeat center center;
     background-size: 40px;
   }
