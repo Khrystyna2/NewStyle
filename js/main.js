@@ -230,17 +230,16 @@ $(window).resize(function () {
 
 $(document).ready(function () {
     //fixed menu
+    let heightHeader = $('.header').height();
     $(window).scroll(function () {
-        let heightHeader = $('.header').height();
-        let heightHeaderChange = $('.header').outerHeight(true);
         if ($(window).scrollTop() >= heightHeader) {
             $('.header').addClass('sticky');
-            $('main').css('padding-top', heightHeaderChange);
             $('.header-menu').css('padding-top', '6px');
+            $('main').css('padding-top', heightHeader);
         } else {
             $('.header').removeClass('sticky');
-            $('main').css('padding-top', "0");
             $('.header-menu').css('padding-top', '2.3rem');
+            $('main').css('padding-top', "0");
         }
     });
 
