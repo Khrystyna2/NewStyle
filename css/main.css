@@ -245,14 +245,8 @@ a:hover {
 .color-white .group-box .search-icon {
   color: #fff;
 }
-.color-white .header-fixed {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
 
-.header-fixed.sticky {
+.header.sticky {
   position: fixed;
   left: 0;
   top: 0;
@@ -1250,12 +1244,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 1780px) {
-  .header {
-    position: relative;
-    color: #fff;
-    z-index: 10;
-  }
-
   .menu__item {
     margin-right: 2.5rem;
   }
@@ -1339,7 +1327,7 @@ a:hover {
   }
 
   .map .contact {
-    left: 5rem;
+    left: 2rem;
   }
 }
 @media only screen and (max-width: 991.8px) {
@@ -1770,7 +1758,7 @@ a:hover {
   }
 
   .map .contact {
-    left: 2rem;
+    left: 1rem;
   }
 
   .footer-menu {

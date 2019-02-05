@@ -9,234 +9,247 @@ function initMap() {
     //    lng1 = 21.0254793;
     // }
     map = new google.maps.Map(document.getElementById("map"), {
-       center: {
-          lat: lat1, lng: lng1
-       }
-       , zoom: 17, mapTypeId: "roadmap", panControl: !1, zoomControl: !1, scaleControl: !1, disableDefaultUI: !0, styles: [
-          {
-             "featureType": "water",
-             "elementType": "geometry",
-             "stylers": [
-                {
-                   "color": "#d0cfcf"
-                },
-                {
-                   "lightness": 17
-                }
-             ]
-          },
-          {
-             "featureType": "landscape",
-             "elementType": "geometry",
-             "stylers": [
-                {
-                   "color": "#f7f7f7"
-                },
-                {
-                   "lightness": 20
-                }
-             ]
-          },
-          {
-             "featureType": "road.highway",
-             "elementType": "geometry.fill",
-             "stylers": [
-                {
-                   "color": "#ffffff"
-                },
-                {
-                   "lightness": 17
-                }
-             ]
-          },
-          {
-             "featureType": "road.highway",
-             "elementType": "geometry.stroke",
-             "stylers": [
-                {
-                   "color": "#ffffff"
-                },
-                {
-                   "lightness": 29
-                },
-                {
-                   "weight": 0.2
-                }
-             ]
-          },
-          {
-             "featureType": "road.arterial",
-             "elementType": "geometry",
-             "stylers": [
-                {
-                   "color": "#ffffff"
-                },
-                {
-                   "lightness": 18
-                }
-             ]
-          },
-          {
-             "featureType": "road.local",
-             "elementType": "geometry",
-             "stylers": [
-                {
-                   "color": "#ffffff"
-                },
-                {
-                   "lightness": 16
-                }
-             ]
-          },
-          {
-             "featureType": "poi",
-             "elementType": "geometry",
-             "stylers": [
-                {
-                   "color": "#e3e3e3"
-                },
-                {
-                   "lightness": 21
-                }
-             ]
-          },
-          {
-             "featureType": "poi.park",
-             "elementType": "geometry",
-             "stylers": [
-                {
-                   "color": "#e3e3e3"
-                },
-                {
-                   "lightness": 21
-                }
-             ]
-          },
-          {
-             "elementType": "labels.text.stroke",
-             "stylers": [
-                {
-                   "visibility": "on"
-                },
-                {
-                   "color": "#ffffff"
-                },
-                {
-                   "lightness": 16
-                }
-             ]
-          },
-          {
-             "elementType": "labels.text.fill",
-             "stylers": [
-                {
-                   "saturation": 36
-                },
-                {
-                   "color": "#333333"
-                },
-                {
-                   "lightness": 40
-                }
-             ]
-          },
-          {
-             "elementType": "labels.icon",
-             "stylers": [
-                {
-                   "visibility": "off"
-                }
-             ]
-          },
-          {
-             "featureType": "transit",
-             "elementType": "geometry",
-             "stylers": [
-                {
-                   "color": "#f2f2f2"
-                },
-                {
-                   "lightness": 19
-                }
-             ]
-          },
-          {
-             "featureType": "administrative",
-             "elementType": "geometry.fill",
-             "stylers": [
-                {
-                   "color": "#fefefe"
-                },
-                {
-                   "lightness": 20
-                }
-             ]
-          },
-          {
-             "featureType": "administrative",
-             "elementType": "geometry.stroke",
-             "stylers": [
-                {
-                   "color": "#fefefe"
-                },
-                {
-                   "lightness": 17
-                },
-                {
-                   "weight": 1.2
-                }
-             ]
-          }
-       ]
+        center: {
+            lat: lat1, lng: lng1
+        }
+        , zoom: 17, mapTypeId: "roadmap", panControl: !1, zoomControl: !1, scaleControl: !1, disableDefaultUI: !0, styles: [
+            {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#d0cfcf"
+                    },
+                    {
+                        "lightness": 17
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#f7f7f7"
+                    },
+                    {
+                        "lightness": 20
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    },
+                    {
+                        "lightness": 17
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    },
+                    {
+                        "lightness": 29
+                    },
+                    {
+                        "weight": 0.2
+                    }
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    },
+                    {
+                        "lightness": 18
+                    }
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    },
+                    {
+                        "lightness": 16
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#e3e3e3"
+                    },
+                    {
+                        "lightness": 21
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#e3e3e3"
+                    },
+                    {
+                        "lightness": 21
+                    }
+                ]
+            },
+            {
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "color": "#ffffff"
+                    },
+                    {
+                        "lightness": 16
+                    }
+                ]
+            },
+            {
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "saturation": 36
+                    },
+                    {
+                        "color": "#333333"
+                    },
+                    {
+                        "lightness": 40
+                    }
+                ]
+            },
+            {
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "transit",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#f2f2f2"
+                    },
+                    {
+                        "lightness": 19
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#fefefe"
+                    },
+                    {
+                        "lightness": 20
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {
+                        "color": "#fefefe"
+                    },
+                    {
+                        "lightness": 17
+                    },
+                    {
+                        "weight": 1.2
+                    }
+                ]
+            }
+        ]
     }
     )
     var icons = {
-       info: {
-          icon: 'icons/location-big.svg',
-       }
+        info: {
+            icon: 'icons/location-big.svg',
+        }
     };
- 
+
     var features = [
-       {
-          position: new google.maps.LatLng(lat1, lng1),
-          type: 'info'
-       }
+        {
+            position: new google.maps.LatLng(lat1, lng1),
+            type: 'info'
+        }
     ];
     // Create markers.
     features.forEach(function (feature) {
-       var marker = new google.maps.Marker({
-          position: feature.position,
-          icon: icons[feature.type].icon,
-          map: map
-       });
+        var marker = new google.maps.Marker({
+            position: feature.position,
+            icon: icons[feature.type].icon,
+            map: map
+        });
     });
- }
+}
 
+// retreat for the first screen
+function retreat () {
+    let heightHeader = $('.header').outerHeight(true);
+    if ($('body').hasClass('color-white')) {
+        $('.first-screen').css('margin-top', - heightHeader);
+    } else {
+        $('.first-screen').css('margin-top', 0);
+    }
+}
+
+retreat();
+
+$(window).resize(function () {
+    retreat();
+});
 
 $(document).ready(function () {
-
     //fixed menu
-
-    $(window).scroll(function(){
-        let heightHeader = $('.header-fixed').height();
-        let heightSectionSearch = $('.header-fixed').outerHeight(true);
-        if($(window).scrollTop() >= heightHeader) {
-          $('.header-fixed').addClass('sticky');
-          $('main').css('padding-top', heightSectionSearch);
-          $('.header-menu').css('padding-top', '6px');
+    $(window).scroll(function () {
+        let heightHeaderChange = $('.header').outerHeight(true);
+        if ($(window).scrollTop() >= 50) {
+            $('.header').addClass('sticky');
+            $('main').css('padding-top', heightHeaderChange);
+            $('.header-menu').css('padding-top', '6px');
         } else {
-          $('.header-fixed').removeClass('sticky');
-          $('main').css('padding-top', "0");
-          $('.header-menu').css('padding-top', '2.3rem');
+            $('.header').removeClass('sticky');
+            $('main').css('padding-top', "0");
+            $('.header-menu').css('padding-top', '2.3rem');
         }
     });
+
 
     $('.menu__item>span').click(function () {
         $(this).next('ul').slideToggle();
         $(this).closest('li').siblings('li').find('ul').slideUp();
     });
 
-    $('.language>li>a').click(function(){
+    $('.language>li>a').click(function () {
         $(this).next('ul').slideToggle();
     });
 
@@ -248,110 +261,102 @@ $(document).ready(function () {
             let findCurrentBlock = $(this).find('.current');
             findCurrentBlock.text('0' + (slick.currentSlide + 1));
             if (slick.slideCount < 10) {
-                findBlock.text('0' + slick.slideCount);          
+                findBlock.text('0' + slick.slideCount);
             } else {
                 findBlock.text(slick.slideCount);
             }
-
         })
-        .slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            fade: true,
-            // autoplay: true,
-            dots: true,
-            arrows: false,
-            autoplaySpeed: 2000,
-            focusOnSelect: false,
-            speed: 1000,
-            responsive: [
-              {
-                breakpoint: 992,
-                settings: {
-                  dots: false
+            .slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                fade: true,
+                // autoplay: true,
+                dots: true,
+                arrows: false,
+                autoplaySpeed: 2000,
+                focusOnSelect: false,
+                speed: 1000,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            dots: false
+                        }
+                    }
+                ]
+            })
+            .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+                // console.log(nextSlide);
+                let indexNextSlider = nextSlide + 1;
+                let findCurrentBlock = $(this).find('.current');
+                if (indexNextSlider <= 9) {
+                    findCurrentBlock.text('0' + (nextSlide + 1));
                 }
-              }
-            ]
-        })
-        .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-            // console.log(nextSlide);
-            let indexNextSlider = nextSlide + 1;
-            let findCurrentBlock = $(this).find('.current');
-            if (indexNextSlider <= 9) {
-                findCurrentBlock.text('0' + (nextSlide + 1));    
-            } 
-            else {
-                findCurrentBlock.text(nextSlide + 1);            
-            }
-        });
-
-
+                else {
+                    findCurrentBlock.text(nextSlide + 1);
+                }
+            });
     });
 
-    $("#search").on("focus", function() {
+    $("#search").on("focus", function () {
         $("#search").val("");
     });
 
-     // tabs start
-     $('#nav-tabs').each(function() {
-        $(this).find('li').each(function(i) {
+    // tabs start
+    $('#nav-tabs').each(function () {
+        $(this).find('li').each(function (i) {
             $(this).attr('data-tab', 'tab' + i);
-            $(this).click(function(){
+            $(this).click(function () {
                 $(this).addClass('active').siblings().removeClass('active');
             });
         });
     });
 
-    $('#tabs-content').each(function() {
-        $(this).find('div.tabs-content__info').each(function(i) {
+    $('#tabs-content').each(function () {
+        $(this).find('div.tabs-content__info').each(function (i) {
             $(this).attr('data-tab', 'tab' + i);
         });
     });
 
-    $('.nav-tabs__items').on('click', function() {
+    $('.nav-tabs__items').on('click', function () {
         var dataTab = $(this).data('tab');
         var getBlock = $(this).closest('.select-collections');
-        getBlock.find('#tabs-content>div[data-tab='+dataTab+']').addClass('active').siblings().removeClass('active');
+        getBlock.find('#tabs-content>div[data-tab=' + dataTab + ']').addClass('active').siblings().removeClass('active');
     });
     // tabs end
 
-    $('.suggestions').each(function() {
-        $(this).find('.suggestions__item').each(function(i) {
+    $('.suggestions').each(function () {
+        $(this).find('.suggestions__item').each(function (i) {
             $(this).attr('data-img', 'img' + i);
         });
-    });
-    $('.suggestions').each(function() {
-        $(this).find('.suggestions__img>div').each(function(i) {
+        $(this).find('.suggestions__img>div').each(function (i) {
             $(this).attr('data-img', 'img' + i);
         });
     });
 
-    $('.suggestions__item').hover(function() {
+    $('.suggestions__item').hover(function () {
         var dataImg = $(this).data('img');
         var getBlock = $(this).closest('.suggestions');
-        getBlock.find('.suggestions__img>div[data-img='+dataImg+']').toggleClass('active');
+        getBlock.find('.suggestions__img>div[data-img=' + dataImg + ']').toggleClass('active');
         $('.suggestions__item').toggleClass('hide');
     });
 
-
+    // slider additional-suggestions
     $('.additional-suggestions__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
         asNavFor: '.additional-suggestions__nav-slider'
-      });
-      $('.additional-suggestions__nav-slider').slick({
+    });
+    $('.additional-suggestions__nav-slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.additional-suggestions__slider',
         focusOnSelect: true
-      });
-          
-
+    });
 
     //   slider-collections
-
     $(function () {
         $('.slider-collection').on('init', function (event, slick) {
             $(this).append('<div class="slick-counter"><span class="current"></span><span class="total"></span></div>');
@@ -360,39 +365,37 @@ $(document).ready(function () {
 
             findCurrentBlock.text('0' + (slick.currentSlide + 2));
             if (slick.slideCount < 5) {
-                findBlock.text('0' + slick.slideCount * 2); 
+                findBlock.text('0' + slick.slideCount * 2);
             } else {
                 findBlock.text(slick.slideCount * 2);
             }
-
         })
-        .slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            // autoplay: true,
-            dots: false,
-            arrows: true,
-            autoplaySpeed: 2000,
-            responsive: [
-              {
-                breakpoint: 568,
-                settings: {
-                  arrows: false
+            .slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                // autoplay: true,
+                dots: false,
+                arrows: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 568,
+                        settings: {
+                            arrows: false
+                        }
+                    }
+                ]
+            })
+            .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+                let findCurrentBlock = $(this).find('.current');
+                let indexNextSlider = nextSlide + 1;
+                if (indexNextSlider < 5) {
+                    findCurrentBlock.text('0' + (indexNextSlider * 2));
                 }
-              }
-            ]
-        })
-        .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-            let findCurrentBlock = $(this).find('.current');
-            let indexNextSlider = nextSlide + 1;
-            if (indexNextSlider < 5) {
-                findCurrentBlock.text('0' + (indexNextSlider * 2));    
-            } 
-            else {
-                findCurrentBlock.text(indexNextSlider * 2);            
-            }
-        });
-
+                else {
+                    findCurrentBlock.text(indexNextSlider * 2);
+                }
+            });
     });
 
     // slider video
@@ -403,60 +406,60 @@ $(document).ready(function () {
             let findCurrentBlock = $(this).find('.current');
             findCurrentBlock.text('0' + (slick.currentSlide + 1));
             if (slick.slideCount < 10) {
-                findBlock.text('0' + slick.slideCount); 
-            
+                findBlock.text('0' + slick.slideCount);
+
             } else {
                 findBlock.text(slick.slideCount);
             }
         })
-        .slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            fade: true,
-            arrows: true,
-            autoplaySpeed: 2000,
-            focusOnSelect: false,
-            speed: 1000,
-            responsive: [
-              {
-                breakpoint: 568,
-                settings: {
-                  arrows: false
+            .slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                fade: true,
+                arrows: true,
+                autoplaySpeed: 2000,
+                focusOnSelect: false,
+                speed: 1000,
+                responsive: [
+                    {
+                        breakpoint: 568,
+                        settings: {
+                            arrows: false
+                        }
+                    }
+                ]
+            })
+            .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+                let indexNextSlider = nextSlide + 1;
+                let findCurrentBlock = $(this).find('.current');
+                if (indexNextSlider <= 9) {
+                    findCurrentBlock.text('0' + indexNextSlider);
                 }
-              }
-            ]
-        })
-        .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-            let indexNextSlider = nextSlide + 1;
-            let findCurrentBlock = $(this).find('.current');
-            if (indexNextSlider <= 9) {
-                findCurrentBlock.text('0' + indexNextSlider);    
-            } 
-            else {
-                findCurrentBlock.text(indexNextSlider);            
-            }
-        });
+                else {
+                    findCurrentBlock.text(indexNextSlider);
+                }
+            });
     });
 
     //mobil menu header
-    $('.menu-btn').click(function() {
+    $('.menu-btn').click(function () {
         $('.mobile-screen').toggleClass('open');
         $('.header').toggleClass('bg-white');
         $('body').toggleClass('overflow');
     });
 
-    $('.btn-select-collections').click(function(){
+    $('.btn-select-collections').click(function () {
         $('.nav-tabs').slideToggle();
     });
 
     //mobile menu footer
-    $('.footer-menu__title').click(function(){
+    $('.footer-menu__title').click(function () {
         $(this).next('ul').slideToggle();
         $(this).closest('li').siblings('li').find('ul').slideUp();
     });
 
-     // slider 
-     function slideDetect() {
+    // slider 
+    function slideDetect() {
         $('.info-box').slick({
             dots: false,
             arrows: false,

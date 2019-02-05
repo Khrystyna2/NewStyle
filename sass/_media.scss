@@ -1,10 +1,4 @@
 @media only screen and (max-width: 1780px) {
-    .header {
-        // padding-top: 52px;
-        position: relative;
-        color: $white;
-        z-index: 10;
-    }
     .menu {
         &__item {
             margin-right: 2.5rem;
@@ -98,7 +92,7 @@
     }
     .map {
         .contact {
-            left: 5rem;
+            left: 2rem;
         }
     }
 }
@@ -520,7 +514,7 @@
     }
     .map {
         .contact {
-            left: 2rem;
+            left: 1rem;
         }
     }
     .footer-menu {
@@ -686,7 +680,7 @@
 @media only screen and (max-height: 550px) {
     // first screen
     .first-screen {
-        height: 500px; // margin-top: -136px;
+        height: 500px;
         padding-bottom: 1rem;
         &::after {
             height: 0;
