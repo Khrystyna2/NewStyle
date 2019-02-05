@@ -254,13 +254,6 @@ a:hover {
   background-color: #fff;
   -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
           box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-  transition: animate 0.5s;
-  -webkit-transition: animate 0.5s;
-  -moz-transition: animate 0.5s;
-  -ms-transition: animate 0.5s;
-  -o-transition: animate 0.5s;
-  animation: move 0.4s ease;
-  -webkit-animation: move 0.4s ease;
 }
 
 @-webkit-keyframes move {
@@ -1243,6 +1236,19 @@ a:hover {
   margin-left: 0.7rem;
 }
 
+@media only screen and (min-width: 1781px) {
+  html {
+    font-size: 23px;
+  }
+
+  .container {
+    max-width: 1720px;
+  }
+
+  .first-screen {
+    margin-top: -174px;
+  }
+}
 @media only screen and (max-width: 1780px) {
   .menu__item {
     margin-right: 2.5rem;
@@ -1276,19 +1282,6 @@ a:hover {
 
   .additional-suggestions__title {
     width: 100%;
-  }
-}
-@media only screen and (min-width: 1781px) {
-  html {
-    font-size: 23px;
-  }
-
-  .container {
-    max-width: 1720px;
-  }
-
-  .first-screen {
-    margin-top: -174px;
   }
 }
 @media only screen and (max-width: 1199.8px) {
@@ -1345,6 +1338,9 @@ a:hover {
   .header .container {
     max-width: 100%;
     padding: 0;
+  }
+  .header .container .row {
+    margin: 0;
   }
   .header.bg-white {
     background-color: #fff;
@@ -1782,6 +1778,10 @@ a:hover {
   .slick-counter {
     display: none;
   }
+  .slick-counter .current,
+  .slick-counter .total {
+    display: none;
+  }
 
   .menu-btn {
     width: 20px;
@@ -1860,6 +1860,9 @@ a:hover {
   }
   .suggestions__item > span {
     display: none;
+  }
+  .suggestions__item:nth-child(2) {
+    border: none;
   }
   .suggestions__title {
     font-size: 1.5rem;
