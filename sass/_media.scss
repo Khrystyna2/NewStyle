@@ -120,6 +120,9 @@
 }
 
 @media only screen and (max-width: 991.8px) {
+    body.overflow {
+        overflow: hidden;
+    }
     .header {
         @include transition(.4s);
         padding-top: 30px;
@@ -184,12 +187,12 @@
     }
 
     .mobile-screen {
-        position: fixed;
+        position: absolute;
         left: 0;
-        bottom: 0;
+        top: 60px;
         background-color: $white;
         width: 100%;
-        height: calc(100vh - 84px);
+        height: calc(100vh - 100px);
         overflow: auto;
         text-align: center;
         padding: 3rem 0;
@@ -265,7 +268,7 @@
             li{
                 border:none;
             }
-            &__sub{
+            &_sub{
                 display: none;
                 li{
                     background-color: transparent;

@@ -944,6 +944,9 @@ a:hover {
   .map .contact {
     left: 5rem; } }
 @media only screen and (max-width: 991.8px) {
+  body.overflow {
+    overflow: hidden; }
+
   .header {
     transition: 0.4s;
     -webkit-transition: 0.4s;
@@ -992,12 +995,12 @@ a:hover {
     margin-left: 20px; }
 
   .mobile-screen {
-    position: fixed;
+    position: absolute;
     left: 0;
-    bottom: 0;
+    top: 60px;
     background-color: #fff;
     width: 100%;
-    height: calc(100vh - 84px);
+    height: calc(100vh - 100px);
     overflow: auto;
     text-align: center;
     padding: 3rem 0;
@@ -1057,11 +1060,11 @@ a:hover {
       display: inline-block !important; }
       .mobile-screen__language li {
         border: none; }
-      .mobile-screen__language__sub {
+      .mobile-screen__language_sub {
         display: none; }
-        .mobile-screen__language__sub li {
+        .mobile-screen__language_sub li {
           background-color: transparent; }
-          .mobile-screen__language__sub li > a {
+          .mobile-screen__language_sub li > a {
             color: #000; }
 
   .index > section {

@@ -207,16 +207,18 @@ $(document).ready(function () {
         });
     });
 
-    //mobil menu
+    //mobil menu header
     $('.menu-btn').click(function() {
         $('.mobile-screen').toggleClass('open');
         $('.header').toggleClass('bg-white');
+        $('body').toggleClass('overflow');
     });
 
     $('.btn-select-collections').click(function(){
         $('.nav-tabs').slideToggle();
     });
 
+    //mobile menu footer
     $('.footer-menu__title').click(function(){
         $(this).next('ul').slideToggle();
         $(this).closest('li').siblings('li').find('ul').slideUp();
