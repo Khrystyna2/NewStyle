@@ -4,6 +4,12 @@
 }
 
 .color-white {
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
     .header-menu {
         color: $white;
         .phone {
