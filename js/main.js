@@ -213,20 +213,20 @@ function initMap() {
 }
 
 // retreat for the first screen
-function retreat () {
-    let heightHeader = $('.header').outerHeight(true);
-    if ($('body').hasClass('color-white')) {
-        $('.first-screen').css('margin-top', - heightHeader);
-    } else {
-        $('.first-screen').css('margin-top', 0);
-    }
-}
+// function retreat () {
+//     let heightHeader = $('.header').outerHeight(true);
+//     if ($('body').hasClass('color-white')) {
+//         $('.first-screen').css('margin-top', - heightHeader);
+//     } else {
+//         $('.first-screen').css('margin-top', 0);
+//     }
+// }
 
-retreat();
+// retreat();
 
-$(window).resize(function () {
-    retreat();
-});
+// $(window).resize(function () {
+//     retreat();
+// });
 
 $(document).ready(function () {
     //fixed menu
