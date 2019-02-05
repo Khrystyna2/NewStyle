@@ -44,8 +44,8 @@
     width: 100%;
     background-color: $white;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-    // @include transition(animate .5s);
-    // @include animate(move .4s ease);
+    @include transition(animate .5s);
+    @include animate(move .4s ease);
 }
 
 @keyframes move {

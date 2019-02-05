@@ -254,6 +254,13 @@ a:hover {
   background-color: #fff;
   -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
           box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  transition: animate 0.5s;
+  -webkit-transition: animate 0.5s;
+  -moz-transition: animate 0.5s;
+  -ms-transition: animate 0.5s;
+  -o-transition: animate 0.5s;
+  animation: move 0.4s ease;
+  -webkit-animation: move 0.4s ease;
 }
 
 @-webkit-keyframes move {
