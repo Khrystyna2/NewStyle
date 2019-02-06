@@ -3,7 +3,7 @@
     z-index: 10;
 }
 
-.color-white {
+.menu-color-white {
     .header {
         position: absolute;
         top: 0;
@@ -183,6 +183,7 @@
             width: 12.4rem;
             display: none;
             z-index: 10;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
             a {
                 color: $black;
                 display: block;
@@ -243,6 +244,7 @@
                 outline: none;
                 width: 19.8rem;
                 background-color: $white;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
                 + .search-icon {
                     z-index: 1;
                     color: $black;
@@ -253,6 +255,7 @@
             input#search {
                 width: 19.8rem;
                 background-color: $white;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
             }   
             .search-icon {
                 z-index: 1;

@@ -25,14 +25,6 @@
         height: 480px;
     }
     .choose-door {
-        &__desc {
-            webkit-column-width: 16rem;
-            -moz-column-width: 16rem;
-            column-width: 16rem;
-            -webkit-column-gap: 8rem;
-            -moz-column-gap: 8rem;
-            column-gap: 8rem;
-        }
         &__block {
             padding: 2.2rem 5rem;
         }
@@ -47,6 +39,15 @@
         &__title {
             width: 100%;
         }
+    }
+
+    .text-tow-columns {
+        -webkit-column-width: 16rem;
+        -moz-column-width: 16rem;
+        column-width: 16rem;
+        -webkit-column-gap: 8rem;
+        -moz-column-gap: 8rem;
+        column-gap: 8rem;
     }
 }
 
@@ -95,6 +96,22 @@
             left: 2rem;
         }
     }
+    
+    .about-us{
+        &__video {
+            margin-bottom: 3rem;
+        }
+        &__desc{
+            margin-bottom: 3rem;
+        }
+        &__text{
+            margin-bottom: 5rem;
+        }
+    }
+
+    .slider-image {
+        margin-bottom: 3rem;
+    }
 }
 
 @media only screen and (max-width: 991.8px) {
@@ -131,7 +148,7 @@
             }
         }
     }
-    .color-white {
+    .menu-color-white {
         .header-menu {
             .mobil-logo {
                 background: url(../image/logo.svg) no-repeat center center;
@@ -350,11 +367,14 @@
     .tabs-content {
         height: 300px;
     }
+
+    .text-tow-columns {
+        -webkit-column-gap: 3rem;
+        -moz-column-gap: 3rem;
+        column-gap: 3rem;
+    }
     .choose-door {
         &__desc {
-            -webkit-column-gap: 3rem;
-            -moz-column-gap: 3rem;
-            column-gap: 3rem;
             >p {
                 min-height: 12.5rem;
             }
@@ -493,11 +513,14 @@
     .tabs-content {
         height: 430px;
     }
+
+    .text-tow-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
     .choose-door {
         &__desc {
-            -webkit-column-count: 1;
-            -moz-column-count: 1;
-            column-count: 1;
             >p {
                 min-height: auto;
             }
@@ -532,6 +555,24 @@
         }
         li>ul {
             display: none;
+        }
+    }
+
+    .second-menu {
+        &__menu {
+            padding: 1rem 0;
+            >.btn-border-black {
+                width: 10rem;
+            }
+        }
+        &::after {
+            top: 4.9rem;
+        }
+    }
+
+    .about-us{
+        &__video {
+            max-height: 22rem;
         }
     }
 }
@@ -685,6 +726,35 @@
         p {
             text-align: center;
         }
+    }
+
+    .path-page {
+        font-size: .85rem;
+        padding: 1.4rem 0 1.8rem;
+    }
+
+    .second-menu {
+        &__menu {
+            flex-direction: column;
+            margin-bottom: 1rem;
+            >.btn-border-black {
+                width: 100%;
+            }
+        }
+        &::after {
+            top: auto;
+            bottom: 1rem;
+        }
+    }
+
+    .about-us{
+        &__video {
+            max-height: 18rem;
+        }
+    }
+
+    .slider-image {
+        padding-bottom: 0;
     }
 }
 

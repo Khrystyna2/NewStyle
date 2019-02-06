@@ -2,12 +2,6 @@
 function initMap() {
 
     let lat1 = 46.6752621, lng1 = 32.5915763;
-    // if ($(window).width() < 768) {
-    //
-    // } else {
-    //    lat1 = 52.1959853;
-    //    lng1 = 21.0254793;
-    // }
     map = new google.maps.Map(document.getElementById("map"), {
         center: {
             lat: lat1, lng: lng1
@@ -212,22 +206,6 @@ function initMap() {
     });
 }
 
-// retreat for the first screen
-// function retreat () {
-//     let heightHeader = $('.header').outerHeight(true);
-//     if ($('body').hasClass('color-white')) {
-//         $('.first-screen').css('margin-top', - heightHeader);
-//     } else {
-//         $('.first-screen').css('margin-top', 0);
-//     }
-// }
-
-// retreat();
-
-// $(window).resize(function () {
-//     retreat();
-// });
-
 $(document).ready(function () {
     //fixed menu
     let heightHeader = $('.header').height();
@@ -244,8 +222,8 @@ $(document).ready(function () {
     });
 
 
-    $('.menu__item>span').click(function () {
-        $(this).next('ul').slideToggle();
+    $('.menu__item').hover(function () {
+        $(this).find('.menu__item_subMenu').slideToggle();
         $(this).closest('li').siblings('li').find('ul').slideUp();
     });
 
@@ -253,7 +231,7 @@ $(document).ready(function () {
         $(this).next('ul').slideToggle();
     });
 
-
+    // slider first screen
     $(function () {
         $('.slider-first-screen').on('init', function (event, slick) {
             $(this).append('<div class="slick-counter"><span class="current"></span><span class="total"></span></div>');
@@ -270,7 +248,7 @@ $(document).ready(function () {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 fade: true,
-                // autoplay: true,
+                autoplay: true,
                 dots: true,
                 arrows: false,
                 autoplaySpeed: 2000,
@@ -286,7 +264,6 @@ $(document).ready(function () {
                 ]
             })
             .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-                // console.log(nextSlide);
                 let indexNextSlider = nextSlide + 1;
                 let findCurrentBlock = $(this).find('.current');
                 if (indexNextSlider <= 9) {
@@ -373,7 +350,7 @@ $(document).ready(function () {
             .slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                // autoplay: true,
+                autoplay: true,
                 dots: false,
                 arrows: true,
                 autoplaySpeed: 2000,
@@ -492,4 +469,46 @@ $(document).ready(function () {
         }
     });
     // slider 
+
+    // slider image
+    $(function () {
+        $('.slider-image').on('init', function (event, slick) {
+            $(this).append('<div class="slick-counter"><span class="current"></span><span class="total"></span></div>');
+            let findBlock = $(this).find('.total');
+            let findCurrentBlock = $(this).find('.current');
+            findCurrentBlock.text('0' + (slick.currentSlide + 1));
+            if (slick.slideCount < 10) {
+                findBlock.text('0' + slick.slideCount);
+
+            } else {
+                findBlock.text(slick.slideCount);
+            }
+        })
+            .slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                // autoplay: true,
+                arrows: true,
+                autoplaySpeed: 2000,
+                focusOnSelect: false,
+                responsive: [
+                    {
+                        breakpoint: 568,
+                        settings: {
+                            arrows: false
+                        }
+                    }
+                ]
+            })
+            .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+                let indexNextSlider = nextSlide + 1;
+                let findCurrentBlock = $(this).find('.current');
+                if (indexNextSlider <= 9) {
+                    findCurrentBlock.text('0' + indexNextSlider);
+                }
+                else {
+                    findCurrentBlock.text(indexNextSlider);
+                }
+            });
+    });
 });
