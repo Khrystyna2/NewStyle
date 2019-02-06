@@ -816,7 +816,12 @@ a:hover {
   z-index: 2;
 }
 
-.index-collections .info-box {
+.info {
+  text-align: center;
+  padding-bottom: 5.2rem;
+}
+
+.info-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -826,7 +831,7 @@ a:hover {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-.index-collections .info-box__item {
+.info-box__item {
   width: 245px;
   height: 8.6rem;
   background: url(../image/index/border-1.png) no-repeat center center/contain;
@@ -834,19 +839,15 @@ a:hover {
   padding-top: 40px;
   margin-bottom: 3rem;
 }
-.index-collections .info-box__item:nth-child(2) {
+.info-box__item:nth-child(2) {
   background: url(../image/index/border-2.png) no-repeat center center/contain;
 }
-.index-collections .info-box__item:last-child {
+.info-box__item:last-child {
   margin-right: 0;
   background: url(../image/index/border-3.png) no-repeat center center/contain;
 }
-.index-collections .info-box__item h2 {
+.info-box__item h2 {
   font-size: 2.4rem;
-}
-.index-collections .info {
-  text-align: center;
-  padding-bottom: 5.2rem;
 }
 
 .nav-tabs {
@@ -1370,6 +1371,10 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 .our-goals__desc {
+  margin-bottom: 5.2rem;
+}
+
+.our-achievements {
   margin-bottom: 5.2rem;
 }
 
