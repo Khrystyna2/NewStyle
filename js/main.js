@@ -222,8 +222,8 @@ $(document).ready(function () {
     });
 
 
-    $('.menu__item').hover(function () {
-        $(this).find('.menu__item_subMenu').slideToggle();
+    $('.menu__item>span').click(function () {
+        $(this).next('.menu__item_subMenu').slideToggle();
         $(this).closest('li').siblings('li').find('ul').slideUp();
     });
 
