@@ -143,6 +143,11 @@ a:hover {
   color: #000;
 }
 
+.title-section {
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+
 .slick-counter {
   color: #000;
   width: 3.2rem;
@@ -1282,8 +1287,6 @@ a:hover {
   margin-bottom: 5.2rem;
 }
 .about-us__title {
-  font-size: 1.9rem;
-  font-weight: 400;
   width: 15.2rem;
   margin-bottom: 0.5rem;
 }
@@ -1293,6 +1296,26 @@ a:hover {
 }
 .about-us__text p {
   margin-bottom: 1rem;
+}
+
+.our-mission {
+  margin-bottom: 5.2rem;
+}
+.our-mission__image {
+  width: 100%;
+  height: 100%;
+}
+.our-mission__image > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.our-mission p {
+  margin-bottom: 1rem;
+}
+.our-mission__text {
+  margin-top: 4.3rem;
 }
 
 .footer {
@@ -1798,6 +1821,13 @@ a:hover {
   .footer-block .link-store li {
     display: inline-block;
     margin-left: 0.7rem;
+  }
+
+  .our-mission {
+    margin-bottom: 3rem;
+  }
+  .our-mission__text {
+    margin-top: 1rem;
   }
 }
 @media only screen and (max-width: 767.8px) {
