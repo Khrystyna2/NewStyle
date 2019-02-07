@@ -523,4 +523,17 @@ $(document).ready(function () {
     $(function () {
         $('select').styler();
     });
+
+    // sort button
+    $('.catalog__sort-btn').click(function() {
+        $(this).addClass('active');
+        $(this).closest('.catalog__sort-btn').siblings().removeClass('active');
+    });
+
+    $('#sortGrid').click(function() {
+        $('.cards').removeClass('sortRow');
+    });
+    $('#sortRow').click(function() {
+        $('.cards').addClass('sortRow');
+    });
 });

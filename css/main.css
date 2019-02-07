@@ -286,7 +286,7 @@ a:hover {
 
 .header {
   position: relative;
-  z-index: 10;
+  z-index: 100;
 }
 
 .menu-color-white .header {
@@ -1400,6 +1400,7 @@ a:hover {
   padding: 0 1.3rem;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+  margin-bottom: 1.7rem;
 }
 .catalog__sort .select {
   font-size: 0.8rem;
@@ -1431,6 +1432,9 @@ a:hover {
 }
 .catalog__sort_btn-row {
   background: url(../icons/row.svg) no-repeat center center/1.08rem;
+}
+.catalog__sort_btn-row.active {
+  background: url(../icons/row-black.svg) no-repeat center center/1.08rem;
 }
 
 .jq-selectbox:focus {
@@ -1643,6 +1647,158 @@ a:hover {
 }
 .label-checkbox input:checked:hover ~ .check-mark::before {
   display: none;
+}
+
+.catalog-collection {
+  width: calc(100% + 20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.catalog-collection__title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 20px;
+  border-bottom: 1px solid #E4E4E4;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.7rem;
+}
+.catalog-collection__title > h3 {
+  font-size: 1.26rem;
+  margin: 0;
+}
+.catalog-collection__title a {
+  color: #000;
+  font-weight: 400;
+}
+.catalog-collection__title a i {
+  margin-left: 0.4rem;
+}
+
+.cards {
+  width: 24%;
+  margin-right: 20px;
+  margin-bottom: 1.3rem;
+  background-color: #FBFBFB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 1.5rem;
+  -webkit-transition: -webkit-box-shadow 0.4s;
+  transition: -webkit-box-shadow 0.4s;
+  transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
+  -webkit-transition: box-shadow 0.4s;
+  -moz-transition: box-shadow 0.4s;
+  -ms-transition: box-shadow 0.4s;
+  -o-transition: box-shadow 0.4s;
+}
+.cards:hover {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.09);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.09);
+}
+.cards__img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0.7rem;
+  min-height: 8.2rem;
+}
+.cards__desc {
+  font-size: .73rem;
+  font-weight: 400;
+}
+.cards__desc > span {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+.cards__desc > span::before {
+  content: '';
+  width: 1.7rem;
+  border-top: 1px solid #707070;
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  margin-left: -0.85rem;
+}
+.cards__title {
+  font-size: 1rem;
+  text-align: center;
+}
+.cards__text {
+  display: none;
+}
+.cards__box {
+  display: none;
+}
+.cards.sortRow {
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.cards.sortRow .cards__img {
+  width: 25%;
+}
+.cards.sortRow .cards__title {
+  text-align: left;
+}
+.cards.sortRow .cards__text {
+  display: block;
+}
+.cards.sortRow .cards__desc {
+  width: 70%;
+  margin-left: 5%;
+}
+.cards.sortRow .cards__desc > span {
+  display: none;
+}
+.cards.sortRow .cards__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer {
