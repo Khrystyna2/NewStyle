@@ -1,0 +1,218 @@
+.catalog {
+    position: relative;
+    .line-top{
+        width: 100%;
+        border-top: 1px solid $border-color;
+        margin-bottom: 3.8rem;
+    }
+    &__sort {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1.3rem;
+        border-top: 1px solid $black;
+        border-bottom: 1px solid $black;
+        .select {
+            font-size: 0.8rem;
+            font-family: $font-fm-second;
+            select {
+                border: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+            }
+            .jq-selectbox {
+                margin-left: 1.3rem;
+            }
+        }
+    }
+    &__group-btn {
+        display: flex;
+    }
+    &__sort-btn {
+        width: 2rem;
+        height: 2rem;
+        padding: 0;
+    }
+    &__sort_btn-grid {
+        background: url(../icons/grid.svg) no-repeat center center / .86rem;
+        &.active {
+            background: url(../icons/grid-black.svg) no-repeat center center / .86rem;
+        }
+    }
+    &__sort_btn-row {
+        background: url(../icons/row.svg) no-repeat center center / 1.08rem;
+    }
+}
+
+//style select
+
+.jq-selectbox {
+    &:focus {
+        outline: none;
+    }
+    &__select {
+        height: 2.7rem;
+        width: 220px;
+        padding: 0.7rem 1.3rem;
+        border: none;
+        border-left: 1px solid $black;
+        border-right: 1px solid $black;
+        font-family: $font-family;
+        line-height: normal;
+        color: $color-footer-text;
+        font-size: .8rem;
+        font-weight: 400;
+        background: transparent;
+        @include border-radius(0);
+        &:hover,
+        &:active {
+            background: transparent;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__select-text {
+        min-width: 60rem;
+    }
+    &__trigger {
+        border: none;
+    }
+    &__trigger-arrow {
+        top: 50%;
+        left: 0;
+        @include transform(translateY(-50%));
+        background: url(../icons/down-arrow.svg) no-repeat center center / 10px;
+        width: 14px;
+        height: 14px;
+        border: none;
+    }
+    &__dropdown {
+        @include border-radius(0);
+    }
+    li {
+        padding: .7rem 1.3rem;
+        color: $black;
+        &:hover {
+            background-color: $color-dots;
+            color: $white;
+        }
+        &.selected {
+            background-color: $color-dots;
+        }
+    }
+}
+
+.filter {
+    width: 72%;
+    margin-bottom: 2rem;
+    &__item {
+        padding: 0.86rem 0;
+        border-bottom: 1px solid $border-color; 
+        &:last-child {
+            border: none;
+        }
+        &:first-child {
+            >ul {
+                display: block;
+            }
+        }
+        >ul{
+            display: none;
+            margin-left: 0.3rem;
+        }
+    }
+    &__title {
+        font-size: 1.08rem;
+        font-weight: 400;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        >i {
+            margin-left: .5rem;
+            font-size: 0.8rem;
+            @include transition(transform .3s); 
+        }
+        &.rotate{
+            >i {
+                @include transform(rotate(180deg));
+            }
+        }
+    }
+    &__item_subitems {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.7rem;
+        &:first-child {
+            margin-top: 1.2rem;
+        }
+        .number {
+            color: $gray;
+            font-size: .6rem;
+        }
+    }
+}
+
+/*style for checkbox*/
+.label-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 1.3rem;
+    margin: 0;
+    cursor: pointer;
+    font-size: .85rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .check-mark {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        @include border-radius(50%);
+        @include transform(translateY(-50%));
+        border: 1px solid $color-dots;
+        &::after {
+            content: "";
+            background: url(../icons/cancel.svg) no-repeat center center;
+            background-size: 10px;
+            display: none;
+            width: inherit;
+            height: inherit;
+        }
+        &::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            @include border-radius(50%);
+            background-color: $black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%));
+            display: none;
+        }
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        &:checked ~ .check-mark::before {
+            display: block;
+        }
+        &:checked:hover ~ .check-mark{
+            border: none;
+        }
+        &:checked:hover ~ .check-mark::after{
+            display: block;
+        }
+        &:checked:hover ~ .check-mark::before{
+            display: none;
+        }
+        
+    }
+}

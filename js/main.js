@@ -205,6 +205,7 @@ function initMap() {
         });
     });
 }
+//google map end
 
 $(document).ready(function () {
     //fixed menu
@@ -333,7 +334,7 @@ $(document).ready(function () {
         focusOnSelect: true
     });
 
-    //   slider-collections
+    // slider-collections
     $(function () {
         $('.slider-collection').on('init', function (event, slick) {
             $(this).append('<div class="slick-counter"><span class="current"></span><span class="total"></span></div>');
@@ -435,7 +436,7 @@ $(document).ready(function () {
         $(this).closest('li').siblings('li').find('ul').slideUp();
     });
 
-    // slider 
+    // slider on mobile screen
     function slideDetect() {
         $('.info-box').slick({
             dots: false,
@@ -510,5 +511,16 @@ $(document).ready(function () {
                     findCurrentBlock.text(indexNextSlider);
                 }
             });
+    });
+
+    //filter catalog
+    $('.filter__item>.filter__title').click(function() {
+        $(this).next('ul').slideToggle();
+        $(this).toggleClass('rotate');
+    });
+
+    // style select
+    $(function () {
+        $('select').styler();
     });
 });

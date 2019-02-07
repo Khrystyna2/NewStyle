@@ -1,5 +1,6 @@
 .second-menu {
     position: relative;
+    margin-top: 2.6rem;
     &__menu {
         display: flex;
         justify-content: space-around;
@@ -15,7 +16,7 @@
     &::before {
         content: '';
         width: 100%;
-        border-top: 1px solid #D9D9D9;
+        border-top: 1px solid $border-color;
         position: absolute;
         left: 0;
         top: 0;
