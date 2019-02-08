@@ -2459,10 +2459,6 @@ a:hover {
     margin: 0;
     margin-left: 1rem;
   }
-  .cards.sortRow .cards__text {
-    max-height: 7.5rem;
-    overflow: hidden;
-  }
 
   .catalog-desc {
     margin-bottom: 3rem;

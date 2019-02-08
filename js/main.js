@@ -536,4 +536,10 @@ $(document).ready(function () {
     $('#sortRow').click(function() {
         $('.cards').addClass('sortRow');
     });
+
+    $(window).resize(function () {
+        if ($(window).width() <= 567.8) {
+            $('.cards').removeClass('sortRow');
+        }
+    });
 });
