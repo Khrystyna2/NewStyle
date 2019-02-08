@@ -2710,6 +2710,7 @@ a:hover {
   }
   .choose-language__item > a {
     width: 13rem;
+    height: 3.8rem;
   }
 }
 @media only screen and (max-width: 567.8px) {
@@ -3033,6 +3034,9 @@ a:hover {
   .choose-language__menu {
     margin-bottom: 12%;
   }
+  .choose-language .logo {
+    top: 4%;
+  }
 }
 @media only screen and (max-width: 768px) and (min-width: 480px) and (orientation: landscape) {
   .choose-language__menu {
@@ -3065,4 +3069,5 @@ a:hover {
     width: auto !important;
   }
 }
+
 /*# sourceMappingURL=main.css.map */

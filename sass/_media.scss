@@ -754,6 +754,7 @@
             margin-bottom: 1px;
             >a {
                 width: 13rem;
+                height: 3.8rem;
             }
         }
     }
@@ -1090,6 +1091,9 @@
     .choose-language {
         &__menu {
             margin-bottom: 12%;
+        }
+        .logo {
+            top: 4%;
         }
     }
 }
