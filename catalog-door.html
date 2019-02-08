@@ -198,7 +198,7 @@
                     <div class="col-12 col-md-4">
                         <div class="filter">
                             <div class="filter__item">
-                                <h5 class="filter__title">Коллекции <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                                <h5 class="filter__title rotate">Коллекции <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
                                 <ul>
                                     <li class="filter__item_subitems">
                                         <label class="label-checkbox">
@@ -443,8 +443,8 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-8">
-                        <div class="catalog__sort">
-                            <div class="catalog__group-btn">
+                        <div class="catalog__sort d-flex">
+                            <div class="catalog__group-btn d-flex">
                                 <button type="button" id="sortGrid" class="catalog__sort-btn catalog__sort_btn-grid active"></button>
                                 <button type="button" id="sortRow" class="catalog__sort-btn catalog__sort_btn-row"></button>
                             </div>
@@ -457,59 +457,487 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="catalog-collection">
-                            <div class="catalog-collection__title">
+                        <div class="catalog-collection d-flex">
+                            <div class="catalog-collection__title d-flex">
                                 <h3>Мода</h3>
                                 <a href="#">Вся коллекция<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                             </div>
-                            <div class="cards">
+                            <div class="cards d-flex">
                                 <a href="#" class="cards__img">
                                     <img src="image/catalog-door/door-1.png" alt="">
                                 </a>
                                 <div class="cards__desc">
-                                        <h4 class="cards__title">Leila</h4>
-                                        <span>Глухое</span>
-                                        <p class="cards__text">Универсальный современный дизайн двери Леона подходит в любой интерьер
-                                                в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные и жилые помещения. Тонкие полоски остекления пропускают больше света, придают конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием Экошпон создает контраст между разными типами поверхностей. Такой приём часто используется в стиле хай-тек – сочетание природной структуры со стеклом или металлом. </p>
-                                        <div class="cards__box">
-                                            <ul class="cards__color">
-                                                <li><img src="image/index/1.svg" alt=""></li>
-                                                <li><img src="image/index/2.svg" alt=""></li>
-                                                <li><img src="image/index/3.svg" alt=""></li>
-                                                <li><img src="image/index/4.svg" alt=""></li>
-                                                <li><img src="image/index/5.svg" alt=""></li>
-                                            </ul>
-                                            <a href="#" class="btn-border-black">Подробнее</a>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="cards">
-                                    <a href="#" class="cards__img">
-                                        <img src="image/catalog-door/door-1.png" alt="">
-                                    </a>
-                                    <div class="cards__desc">
-                                            <h4 class="cards__title">Leila</h4>
-                                            <span>Глухое</span>
-                                            <p class="cards__text">Универсальный современный дизайн двери Леона подходит в любой интерьер
-                                                    в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные и жилые помещения. Тонкие полоски остекления пропускают больше света, придают конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием Экошпон создает контраст между разными типами поверхностей. Такой приём часто используется в стиле хай-тек – сочетание природной структуры со стеклом или металлом. </p>
-                                            <div class="cards__box">
-                                                <ul class="cards__color">
-                                                    <li><img src="image/index/1.svg" alt=""></li>
-                                                    <li><img src="image/index/2.svg" alt=""></li>
-                                                    <li><img src="image/index/3.svg" alt=""></li>
-                                                    <li><img src="image/index/4.svg" alt=""></li>
-                                                    <li><img src="image/index/5.svg" alt=""></li>
-                                                </ul>
-                                                <a href="#" class="btn-border-black">Подробнее</a>
-                                            </div>
+                                    <h4 class="cards__title">Leila</h4>
+                                    <span>Глухое</span>
+                                    <p class="cards__text">Универсальный современный дизайн двери Леона подходит в
+                                        любой интерьер
+                                        в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные
+                                        и жилые помещения. Тонкие полоски остекления пропускают больше света, придают
+                                        конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием
+                                        Экошпон создает контраст между разными типами поверхностей. Такой приём часто
+                                        используется в стиле хай-тек – сочетание природной структуры со стеклом или
+                                        металлом. </p>
+                                    <div class="cards__box">
+                                        <ul class="cards__color d-flex">
+                                            <li><img src="image/index/1.svg" alt=""></li>
+                                            <li><img src="image/index/2.svg" alt=""></li>
+                                            <li><img src="image/index/3.svg" alt=""></li>
+                                            <li><img src="image/index/4.svg" alt=""></li>
+                                            <li><img src="image/index/5.svg" alt=""></li>
+                                        </ul>
+                                        <a href="#" class="btn-border-black cards__btn">Подробнее</a>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="cards d-flex">
+                                <a href="#" class="cards__img">
+                                    <img src="image/catalog-door/door-2.png" alt="">
+                                </a>
+                                <div class="cards__desc">
+                                    <h4 class="cards__title">Leona</h4>
+                                    <span>Со стеклом Сатин</span>
+                                    <p class="cards__text">Универсальный современный дизайн двери Леона подходит в
+                                        любой интерьер
+                                        в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные
+                                        и жилые помещения. Тонкие полоски остекления пропускают больше света, придают
+                                        конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием
+                                        Экошпон создает контраст между разными типами поверхностей. Такой приём часто
+                                        используется в стиле хай-тек – сочетание природной структуры со стеклом или
+                                        металлом. </p>
+                                    <div class="cards__box">
+                                        <ul class="cards__color d-flex">
+                                            <li><img src="image/index/1.svg" alt=""></li>
+                                            <li><img src="image/index/2.svg" alt=""></li>
+                                            <li><img src="image/index/3.svg" alt=""></li>
+                                            <li><img src="image/index/4.svg" alt=""></li>
+                                            <li><img src="image/index/5.svg" alt=""></li>
+                                        </ul>
+                                        <a href="#" class="btn-border-black cards__btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards d-flex">
+                                <a href="#" class="cards__img">
+                                    <img src="image/catalog-door/door-3.png" alt="">
+                                </a>
+                                <div class="cards__desc">
+                                    <h4 class="cards__title">Leona</h4>
+                                    <span>С черным стеклом</span>
+                                    <p class="cards__text">Универсальный современный дизайн двери Леона подходит в
+                                        любой интерьер
+                                        в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные
+                                        и жилые помещения. Тонкие полоски остекления пропускают больше света, придают
+                                        конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием
+                                        Экошпон создает контраст между разными типами поверхностей. Такой приём часто
+                                        используется в стиле хай-тек – сочетание природной структуры со стеклом или
+                                        металлом. </p>
+                                    <div class="cards__box">
+                                        <ul class="cards__color d-flex">
+                                            <li><img src="image/index/1.svg" alt=""></li>
+                                            <li><img src="image/index/2.svg" alt=""></li>
+                                            <li><img src="image/index/3.svg" alt=""></li>
+                                            <li><img src="image/index/4.svg" alt=""></li>
+                                            <li><img src="image/index/5.svg" alt=""></li>
+                                        </ul>
+                                        <a href="#" class="btn-border-black cards__btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards d-flex">
+                                <a href="#" class="cards__img">
+                                    <img src="image/catalog-door/door-4.png" alt="">
+                                </a>
+                                <div class="cards__desc">
+                                    <h4 class="cards__title">Viola</h4>
+                                    <span>Со стеклом Сатин</span>
+                                    <p class="cards__text">Универсальный современный дизайн двери Леона подходит в
+                                        любой интерьер
+                                        в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные
+                                        и жилые помещения. Тонкие полоски остекления пропускают больше света, придают
+                                        конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием
+                                        Экошпон создает контраст между разными типами поверхностей. Такой приём часто
+                                        используется в стиле хай-тек – сочетание природной структуры со стеклом или
+                                        металлом. </p>
+                                    <div class="cards__box">
+                                        <ul class="cards__color d-flex">
+                                            <li><img src="image/index/1.svg" alt=""></li>
+                                            <li><img src="image/index/2.svg" alt=""></li>
+                                            <li><img src="image/index/3.svg" alt=""></li>
+                                            <li><img src="image/index/4.svg" alt=""></li>
+                                            <li><img src="image/index/5.svg" alt=""></li>
+                                        </ul>
+                                        <a href="#" class="btn-border-black cards__btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-collection d-flex">
+                            <div class="catalog-collection__title d-flex">
+                                <h3>Элегант</h3>
+                                <a href="#">Вся коллекция<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="cards d-flex">
+                                <a href="#" class="cards__img">
+                                    <img src="image/catalog-door/door-5.png" alt="">
+                                </a>
+                                <div class="cards__desc">
+                                    <h4 class="cards__title">Leila</h4>
+                                    <span>Глухое</span>
+                                    <p class="cards__text">Универсальный современный дизайн двери Леона подходит в
+                                        любой интерьер
+                                        в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные
+                                        и жилые помещения. Тонкие полоски остекления пропускают больше света, придают
+                                        конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием
+                                        Экошпон создает контраст между разными типами поверхностей. Такой приём часто
+                                        используется в стиле хай-тек – сочетание природной структуры со стеклом или
+                                        металлом. </p>
+                                    <div class="cards__box">
+                                        <ul class="cards__color d-flex">
+                                            <li><img src="image/index/1.svg" alt=""></li>
+                                            <li><img src="image/index/2.svg" alt=""></li>
+                                            <li><img src="image/index/3.svg" alt=""></li>
+                                            <li><img src="image/index/4.svg" alt=""></li>
+                                            <li><img src="image/index/5.svg" alt=""></li>
+                                        </ul>
+                                        <a href="#" class="btn-border-black cards__btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards d-flex">
+                                <a href="#" class="cards__img">
+                                    <img src="image/catalog-door/door-6.png" alt="">
+                                </a>
+                                <div class="cards__desc">
+                                    <h4 class="cards__title">Leona</h4>
+                                    <span>Со стеклом Сатин</span>
+                                    <p class="cards__text">Универсальный современный дизайн двери Леона подходит в
+                                        любой интерьер
+                                        в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные
+                                        и жилые помещения. Тонкие полоски остекления пропускают больше света, придают
+                                        конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием
+                                        Экошпон создает контраст между разными типами поверхностей. Такой приём часто
+                                        используется в стиле хай-тек – сочетание природной структуры со стеклом или
+                                        металлом. </p>
+                                    <div class="cards__box">
+                                        <ul class="cards__color d-flex">
+                                            <li><img src="image/index/1.svg" alt=""></li>
+                                            <li><img src="image/index/2.svg" alt=""></li>
+                                            <li><img src="image/index/3.svg" alt=""></li>
+                                            <li><img src="image/index/4.svg" alt=""></li>
+                                            <li><img src="image/index/5.svg" alt=""></li>
+                                        </ul>
+                                        <a href="#" class="btn-border-black cards__btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards d-flex">
+                                <a href="#" class="cards__img">
+                                    <img src="image/catalog-door/door-7.png" alt="">
+                                </a>
+                                <div class="cards__desc">
+                                    <h4 class="cards__title">Leona</h4>
+                                    <span>С черным стеклом</span>
+                                    <p class="cards__text">Универсальный современный дизайн двери Леона подходит в
+                                        любой интерьер
+                                        в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные
+                                        и жилые помещения. Тонкие полоски остекления пропускают больше света, придают
+                                        конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием
+                                        Экошпон создает контраст между разными типами поверхностей. Такой приём часто
+                                        используется в стиле хай-тек – сочетание природной структуры со стеклом или
+                                        металлом. </p>
+                                    <div class="cards__box">
+                                        <ul class="cards__color d-flex">
+                                            <li><img src="image/index/1.svg" alt=""></li>
+                                            <li><img src="image/index/2.svg" alt=""></li>
+                                            <li><img src="image/index/3.svg" alt=""></li>
+                                            <li><img src="image/index/4.svg" alt=""></li>
+                                            <li><img src="image/index/5.svg" alt=""></li>
+                                        </ul>
+                                        <a href="#" class="btn-border-black cards__btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards d-flex">
+                                <a href="#" class="cards__img">
+                                    <img src="image/catalog-door/door-8.png" alt="">
+                                </a>
+                                <div class="cards__desc">
+                                    <h4 class="cards__title">Viola</h4>
+                                    <span>Со стеклом Сатин</span>
+                                    <p class="cards__text">Универсальный современный дизайн двери Леона подходит в
+                                        любой интерьер
+                                        в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные
+                                        и жилые помещения. Тонкие полоски остекления пропускают больше света, придают
+                                        конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием
+                                        Экошпон создает контраст между разными типами поверхностей. Такой приём часто
+                                        используется в стиле хай-тек – сочетание природной структуры со стеклом или
+                                        металлом. </p>
+                                    <div class="cards__box">
+                                        <ul class="cards__color d-flex">
+                                            <li><img src="image/index/1.svg" alt=""></li>
+                                            <li><img src="image/index/2.svg" alt=""></li>
+                                            <li><img src="image/index/3.svg" alt=""></li>
+                                            <li><img src="image/index/4.svg" alt=""></li>
+                                            <li><img src="image/index/5.svg" alt=""></li>
+                                        </ul>
+                                        <a href="#" class="btn-border-black cards__btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-collection d-flex">
+                            <div class="catalog-collection__title d-flex">
+                                <h3>Маэстра</h3>
+                                <a href="#">Вся коллекция<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="cards d-flex">
+                                <a href="#" class="cards__img">
+                                    <img src="image/catalog-door/door-9.png" alt="">
+                                </a>
+                                <div class="cards__desc">
+                                    <h4 class="cards__title">Leila</h4>
+                                    <span>Глухое</span>
+                                    <p class="cards__text">Универсальный современный дизайн двери Леона подходит в
+                                        любой интерьер
+                                        в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные
+                                        и жилые помещения. Тонкие полоски остекления пропускают больше света, придают
+                                        конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием
+                                        Экошпон создает контраст между разными типами поверхностей. Такой приём часто
+                                        используется в стиле хай-тек – сочетание природной структуры со стеклом или
+                                        металлом. </p>
+                                    <div class="cards__box">
+                                        <ul class="cards__color d-flex">
+                                            <li><img src="image/index/1.svg" alt=""></li>
+                                            <li><img src="image/index/2.svg" alt=""></li>
+                                            <li><img src="image/index/3.svg" alt=""></li>
+                                            <li><img src="image/index/4.svg" alt=""></li>
+                                            <li><img src="image/index/5.svg" alt=""></li>
+                                        </ul>
+                                        <a href="#" class="btn-border-black cards__btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards d-flex">
+                                <a href="#" class="cards__img">
+                                    <img src="image/catalog-door/door-10.png" alt="">
+                                </a>
+                                <div class="cards__desc">
+                                    <h4 class="cards__title">Leona</h4>
+                                    <span>Со стеклом Сатин</span>
+                                    <p class="cards__text">Универсальный современный дизайн двери Леона подходит в
+                                        любой интерьер
+                                        в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные
+                                        и жилые помещения. Тонкие полоски остекления пропускают больше света, придают
+                                        конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием
+                                        Экошпон создает контраст между разными типами поверхностей. Такой приём часто
+                                        используется в стиле хай-тек – сочетание природной структуры со стеклом или
+                                        металлом. </p>
+                                    <div class="cards__box">
+                                        <ul class="cards__color d-flex">
+                                            <li><img src="image/index/1.svg" alt=""></li>
+                                            <li><img src="image/index/2.svg" alt=""></li>
+                                            <li><img src="image/index/3.svg" alt=""></li>
+                                            <li><img src="image/index/4.svg" alt=""></li>
+                                            <li><img src="image/index/5.svg" alt=""></li>
+                                        </ul>
+                                        <a href="#" class="btn-border-black cards__btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards d-flex">
+                                <a href="#" class="cards__img">
+                                    <img src="image/catalog-door/door-11.png" alt="">
+                                </a>
+                                <div class="cards__desc">
+                                    <h4 class="cards__title">Leona</h4>
+                                    <span>С черным стеклом</span>
+                                    <p class="cards__text">Универсальный современный дизайн двери Леона подходит в
+                                        любой интерьер
+                                        в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные
+                                        и жилые помещения. Тонкие полоски остекления пропускают больше света, придают
+                                        конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием
+                                        Экошпон создает контраст между разными типами поверхностей. Такой приём часто
+                                        используется в стиле хай-тек – сочетание природной структуры со стеклом или
+                                        металлом. </p>
+                                    <div class="cards__box">
+                                        <ul class="cards__color d-flex">
+                                            <li><img src="image/index/1.svg" alt=""></li>
+                                            <li><img src="image/index/2.svg" alt=""></li>
+                                            <li><img src="image/index/3.svg" alt=""></li>
+                                            <li><img src="image/index/4.svg" alt=""></li>
+                                            <li><img src="image/index/5.svg" alt=""></li>
+                                        </ul>
+                                        <a href="#" class="btn-border-black cards__btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards d-flex">
+                                <a href="#" class="cards__img">
+                                    <img src="image/catalog-door/door-12.png" alt="">
+                                </a>
+                                <div class="cards__desc">
+                                    <h4 class="cards__title">Viola</h4>
+                                    <span>Со стеклом Сатин</span>
+                                    <p class="cards__text">Универсальный современный дизайн двери Леона подходит в
+                                        любой интерьер
+                                        в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные
+                                        и жилые помещения. Тонкие полоски остекления пропускают больше света, придают
+                                        конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием
+                                        Экошпон создает контраст между разными типами поверхностей. Такой приём часто
+                                        используется в стиле хай-тек – сочетание природной структуры со стеклом или
+                                        металлом. </p>
+                                    <div class="cards__box">
+                                        <ul class="cards__color d-flex">
+                                            <li><img src="image/index/1.svg" alt=""></li>
+                                            <li><img src="image/index/2.svg" alt=""></li>
+                                            <li><img src="image/index/3.svg" alt=""></li>
+                                            <li><img src="image/index/4.svg" alt=""></li>
+                                            <li><img src="image/index/5.svg" alt=""></li>
+                                        </ul>
+                                        <a href="#" class="btn-border-black cards__btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-collection d-flex">
+                            <div class="catalog-collection__title d-flex">
+                                <h3>Ностра</h3>
+                                <a href="#">Вся коллекция<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="cards d-flex">
+                                <a href="#" class="cards__img">
+                                    <img src="image/catalog-door/door-13.png" alt="">
+                                </a>
+                                <div class="cards__desc">
+                                    <h4 class="cards__title">Leila</h4>
+                                    <span>Глухое</span>
+                                    <p class="cards__text">Универсальный современный дизайн двери Леона подходит в
+                                        любой интерьер
+                                        в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные
+                                        и жилые помещения. Тонкие полоски остекления пропускают больше света, придают
+                                        конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием
+                                        Экошпон создает контраст между разными типами поверхностей. Такой приём часто
+                                        используется в стиле хай-тек – сочетание природной структуры со стеклом или
+                                        металлом. </p>
+                                    <div class="cards__box">
+                                        <ul class="cards__color d-flex">
+                                            <li><img src="image/index/1.svg" alt=""></li>
+                                            <li><img src="image/index/2.svg" alt=""></li>
+                                            <li><img src="image/index/3.svg" alt=""></li>
+                                            <li><img src="image/index/4.svg" alt=""></li>
+                                            <li><img src="image/index/5.svg" alt=""></li>
+                                        </ul>
+                                        <a href="#" class="btn-border-black cards__btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards d-flex">
+                                <a href="#" class="cards__img">
+                                    <img src="image/catalog-door/door-14.png" alt="">
+                                </a>
+                                <div class="cards__desc">
+                                    <h4 class="cards__title">Leona</h4>
+                                    <span>Со стеклом Сатин</span>
+                                    <p class="cards__text">Универсальный современный дизайн двери Леона подходит в
+                                        любой интерьер
+                                        в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные
+                                        и жилые помещения. Тонкие полоски остекления пропускают больше света, придают
+                                        конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием
+                                        Экошпон создает контраст между разными типами поверхностей. Такой приём часто
+                                        используется в стиле хай-тек – сочетание природной структуры со стеклом или
+                                        металлом. </p>
+                                    <div class="cards__box">
+                                        <ul class="cards__color d-flex">
+                                            <li><img src="image/index/1.svg" alt=""></li>
+                                            <li><img src="image/index/2.svg" alt=""></li>
+                                            <li><img src="image/index/3.svg" alt=""></li>
+                                            <li><img src="image/index/4.svg" alt=""></li>
+                                            <li><img src="image/index/5.svg" alt=""></li>
+                                        </ul>
+                                        <a href="#" class="btn-border-black cards__btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards d-flex">
+                                <a href="#" class="cards__img">
+                                    <img src="image/catalog-door/door-15.png" alt="">
+                                </a>
+                                <div class="cards__desc">
+                                    <h4 class="cards__title">Leona</h4>
+                                    <span>С черным стеклом</span>
+                                    <p class="cards__text">Универсальный современный дизайн двери Леона подходит в
+                                        любой интерьер
+                                        в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные
+                                        и жилые помещения. Тонкие полоски остекления пропускают больше света, придают
+                                        конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием
+                                        Экошпон создает контраст между разными типами поверхностей. Такой приём часто
+                                        используется в стиле хай-тек – сочетание природной структуры со стеклом или
+                                        металлом. </p>
+                                    <div class="cards__box">
+                                        <ul class="cards__color d-flex">
+                                            <li><img src="image/index/1.svg" alt=""></li>
+                                            <li><img src="image/index/2.svg" alt=""></li>
+                                            <li><img src="image/index/3.svg" alt=""></li>
+                                            <li><img src="image/index/4.svg" alt=""></li>
+                                            <li><img src="image/index/5.svg" alt=""></li>
+                                        </ul>
+                                        <a href="#" class="btn-border-black cards__btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards d-flex">
+                                <a href="#" class="cards__img">
+                                    <img src="image/catalog-door/door-16.png" alt="">
+                                </a>
+                                <div class="cards__desc">
+                                    <h4 class="cards__title">Viola</h4>
+                                    <span>Со стеклом Сатин</span>
+                                    <p class="cards__text">Универсальный современный дизайн двери Леона подходит в
+                                        любой интерьер
+                                        в стиле лофт, техно или хай-тек. Дверное полотно идеально вписывается в офисные
+                                        и жилые помещения. Тонкие полоски остекления пропускают больше света, придают
+                                        конструкции оригинальный вид. Сочетание матового или черного стекла с покрытием
+                                        Экошпон создает контраст между разными типами поверхностей. Такой приём часто
+                                        используется в стиле хай-тек – сочетание природной структуры со стеклом или
+                                        металлом. </p>
+                                    <div class="cards__box">
+                                        <ul class="cards__color d-flex">
+                                            <li><img src="image/index/1.svg" alt=""></li>
+                                            <li><img src="image/index/2.svg" alt=""></li>
+                                            <li><img src="image/index/3.svg" alt=""></li>
+                                            <li><img src="image/index/4.svg" alt=""></li>
+                                            <li><img src="image/index/5.svg" alt=""></li>
+                                        </ul>
+                                        <a href="#" class="btn-border-black cards__btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line-bottom"></div>
+            </div>
+        </section>
+
+        <section class="catalog-desc">
+            <div class="container">
+                <div class="row justify-content-end align-items-center">
+                    <div class="col-12 col-md-6 col-xl-5">
+                        <div class="catalog-desc__text">
+                            <h2 class="title-section">Качественные и прочные
+                                двери для комнат дома</h2>
+                                <p>Межкомнатные двери играют очень важную роль в любом доме, поскольку с их помощью можно удачно разделить пространство, отделить комнаты и создать удобные и хорошие условия для жизни. Сегодня многие компании выпускают межкомнатные двери низкого качества, из-за чего многие сталкиваются с плохой звукоизоляцией, недолговечностью, а также, с тем, что двери буквально картонные, и их очень легко повредить.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="catalog-desc__img">
+                            <img src="image/catalog-door/image.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <!-- footer start -->

@@ -62,6 +62,7 @@ h6 {
 
 img {
     max-width: 100%;
+    @include transition(transform .3s);
 }
 
 iframe {
