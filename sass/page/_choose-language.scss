@@ -1,0 +1,64 @@
+.choose-language {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: $gray;
+    overflow: hidden;
+    &__menu {
+        justify-content: center;
+        margin-bottom: 10.5rem;
+    }
+    &__item {
+        margin-right: 1px;
+        >a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 8.7rem;
+            height: 4.3rem;
+            color: $black;
+            font-size: 1.2rem;
+            position: relative;
+            background-color: rgba(240, 240, 240, .8);
+            >img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                @include transition(opacity .4s);
+            }
+            &:hover>img {
+                opacity: 1;
+            }
+        }
+    }
+    .logo {
+        width: 9rem;
+        position: absolute;
+        top: 8%;
+        left: 50%;
+        @include transform(translateX(-50%));
+    }
+}
+
+#video-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    >video {
+        height: 100%;
+        width: auto;
+        min-width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+    }
+}
+

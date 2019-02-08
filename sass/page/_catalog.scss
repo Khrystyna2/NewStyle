@@ -250,6 +250,9 @@
             i {
                 margin-left: 0.4rem;
             }
+            &:hover {
+                color: $color-dots;
+            }
         }
         .color-gray {
             color: $color-dots;
