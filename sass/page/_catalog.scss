@@ -213,15 +213,15 @@
         &:checked ~ .check-mark::before {
             display: block;
         }
-        &:checked:hover ~ .check-mark{
-            border: none;
-        }
-        &:checked:hover ~ .check-mark::after{
-            display: block;
-        }
-        &:checked:hover ~ .check-mark::before{
-            display: none;
-        }
+        // &:checked:hover ~ .check-mark{
+        //     border: none;
+        // }
+        // &:checked:hover ~ .check-mark::after{
+        //     display: block;
+        // }
+        // &:checked:hover ~ .check-mark::before{
+        //     display: none;
+        // }
         
     }
 }
@@ -250,6 +250,9 @@
             i {
                 margin-left: 0.4rem;
             }
+        }
+        .color-gray {
+            color: $color-dots;
         }
     }
 }

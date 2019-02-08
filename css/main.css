@@ -1648,15 +1648,6 @@ a:hover {
 .label-checkbox input:checked ~ .check-mark::before {
   display: block;
 }
-.label-checkbox input:checked:hover ~ .check-mark {
-  border: none;
-}
-.label-checkbox input:checked:hover ~ .check-mark::after {
-  display: block;
-}
-.label-checkbox input:checked:hover ~ .check-mark::before {
-  display: none;
-}
 
 .catalog-collection {
   width: calc(100% + 20px);
@@ -1693,6 +1684,9 @@ a:hover {
 }
 .catalog-collection__title a i {
   margin-left: 0.4rem;
+}
+.catalog-collection__title .color-gray {
+  color: #C9C9C9;
 }
 
 .cards {
@@ -2195,6 +2189,8 @@ a:hover {
     padding: 1.3rem 0 0 0;
     width: 100%;
     text-align: center;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .mobile-screen .menu__item_subMenu::before {
     content: '';
