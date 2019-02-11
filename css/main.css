@@ -1924,6 +1924,46 @@ a:hover {
      object-fit: cover;
 }
 
+.open-model__desc {
+  margin-bottom: 5.2rem;
+}
+
+.model-slider {
+  width: 100%;
+  border: 1px solid #E4E4E4;
+  padding: 3rem 4rem 4.2rem 4rem;
+}
+.model-slider__item {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.model-slider__item > img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.model-slider-nav {
+  width: 80%;
+  border: 1px solid #E4E4E4;
+  margin: -2.1rem auto 5.2rem;
+  padding: .3rem 0.2rem;
+  background: #fff;
+}
+.model-slider-nav__item {
+  overflow: hidden;
+  margin: 0 .2rem;
+}
+.model-slider-nav__item > img {
+  width: 100%;
+}
+
 .footer {
   padding-bottom: 1.4rem;
 }

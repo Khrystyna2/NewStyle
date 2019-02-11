@@ -469,7 +469,6 @@ $(document).ready(function () {
             slideDetect()
         }
     });
-    // slider 
 
     // slider image
     $(function () {
@@ -541,5 +540,21 @@ $(document).ready(function () {
         if ($(window).width() <= 567.8) {
             $('.cards').removeClass('sortRow');
         }
+    });
+
+    // slider open model
+    $('.model-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.model-slider-nav'
+    });
+    $('.model-slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.model-slider',
+        focusOnSelect: true,
+        arrows: false
     });
 });
