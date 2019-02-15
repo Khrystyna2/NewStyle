@@ -19,6 +19,7 @@
         .select {
             font-size: 0.8rem;
             font-family: $font-fm-second;
+            height: 2.7rem;
             select {
                 border: none;
                 -webkit-appearance: none;
@@ -68,9 +69,12 @@
         font-weight: 400;
         background: transparent;
         @include border-radius(0);
+        text-shadow: none;
+        box-shadow: none;
         &:hover,
         &:active {
             background: transparent;
+            box-shadow: none;
         }
         &:focus {
             outline: none;
@@ -98,6 +102,8 @@
         color: $color-footer-text;
         font-size: .8rem;
         font-weight: 400;
+        margin-top: 0;
+        border: none;
     }
     li {
         padding: .7rem 1.3rem;

@@ -254,6 +254,7 @@ $(document).ready(function () {
                 arrows: false,
                 autoplaySpeed: 2000,
                 focusOnSelect: false,
+                slide: ".slider-first-screen__item",
                 speed: 1000,
                 responsive: [
                     {
@@ -275,6 +276,7 @@ $(document).ready(function () {
                 }
             });
     });
+
 
     $("#search").on("focus", function () {
         $("#search").val("");
@@ -354,6 +356,7 @@ $(document).ready(function () {
                 autoplay: true,
                 dots: false,
                 arrows: true,
+                slide: ".slider-collection__item",
                 autoplaySpeed: 2000,
                 responsive: [
                     {
@@ -393,10 +396,10 @@ $(document).ready(function () {
             .slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                fade: true,
                 arrows: true,
                 autoplaySpeed: 2000,
                 focusOnSelect: false,
+                slide: ".slider-video__item",
                 speed: 1000,
                 responsive: [
                     {
@@ -438,7 +441,7 @@ $(document).ready(function () {
 
     // slider on mobile screen
     function slideDetect() {
-        $('.info-box').slick({
+        $('.info-box').not('.slick-initialized').slick({
             dots: false,
             arrows: false,
             slidesToShow: 3,
@@ -491,6 +494,7 @@ $(document).ready(function () {
                 arrows: true,
                 autoplaySpeed: 2000,
                 focusOnSelect: false,
+                slide: ".slider-image__item",
                 responsive: [
                     {
                         breakpoint: 568,
@@ -556,5 +560,34 @@ $(document).ready(function () {
         asNavFor: '.model-slider',
         focusOnSelect: true,
         arrows: false
+    });
+
+    $('.other-models__examples').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 568,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
 });

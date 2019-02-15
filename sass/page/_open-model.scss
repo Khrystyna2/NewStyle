@@ -1,6 +1,96 @@
 .open-model {
-    &__desc{
+    &__info{
         margin-bottom: 5.2rem;
+        > .row {
+            margin-bottom: 5.2rem;
+        }
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title_mob-screen {
+        display: none;
+    }
+    &__letter {
+        width: 3.34rem;
+        height: 3.34rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-fm-second;
+        font-weight: 700;
+        font-size: 1.4rem;
+        border: 1px solid $gray;
+        color: $black;
+    }
+    &__desc {
+        margin-top: 1.4rem;
+        padding-left: 2.3rem;
+    }
+    &__group-info {
+        justify-content: space-between;
+        border-top: 1px solid $light-gray;
+        margin-top: 2rem;
+        padding-top: 1.7rem;
+    }
+    &__list {
+        width: 60%;
+        li {
+            line-height: 1.6rem;
+            padding-left: 0.6rem;
+            position: relative;
+            &::after {
+                content: '.';
+                position: absolute;
+                left: 0;
+                top: 0;
+                line-height: 1.1rem;
+            }
+        }
+    }
+
+    &__group-select {
+        width: 10.43rem;
+        min-width: 200px;
+        .select {
+            width: 100%;
+            height: 2.7rem;
+            margin-bottom: 1.65rem;
+            text-align: center;
+            >select {
+                border: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                opacity: 0;
+            }
+            .jq-selectbox{
+                width: 100%;
+                box-sizing: border-box;
+                &.opened{
+                    background-color: $black;
+                    color: $white;
+                    .jq-selectbox__select {
+                        color: $white;
+                    }
+                    .jq-selectbox__trigger-arrow {
+                        background: url(../icons/down-arrow-white.svg) no-repeat center center / 10px;
+                    }
+                }
+                &__select {
+                    border: 1px solid $black;
+                    width: 100%;
+                    padding: 0.7rem 1.6rem;
+                }
+                &__select-text {
+                    margin: 0 auto;
+                }
+                li {
+                    text-align: left;
+                }
+            }
+        }
     }
 }
 
@@ -8,6 +98,8 @@
     width: 100%;
     border: 1px solid $light-gray;
     padding: 3rem 4rem 4.2rem 4rem;
+    max-height: 34rem;
+    overflow: hidden;
     &__item {
         display: flex !important;
         align-items: center;
@@ -22,14 +114,77 @@
 .model-slider-nav {
     width: 80%;
     border: 1px solid $light-gray;
-    margin: -2.1rem auto 5.2rem;
+    margin: -2.1rem auto 0;
     padding: .3rem 0.2rem;
     background: $white;
+    max-height: 4.4rem;
+    overflow: hidden;
     &__item {
         overflow: hidden;
         margin: 0 .2rem;
         >img {
             width: 100%;
+        }
+    }
+}
+
+.subtitle-section {
+    font-size: 1.26rem;
+    font-weight: 700;
+    margin-bottom: 2.2rem;
+    border-bottom: 1px solid $gray;
+    padding-bottom: 0.7rem;
+}
+
+.other-models {
+    &__examples {
+        display: flex;
+        width: calc(100% + 20px);
+        margin-left: -10px;
+        margin-bottom: 5.2rem;
+        .cards {
+            margin: 0 10px;
+        }
+    }
+}
+
+.other-goods {
+    margin-bottom: 5.2rem;
+    &__cards {
+        align-items: flex-start;
+        height: 9.5rem;
+        color: $black;
+        margin-bottom: 1.5rem;
+        @include transition(box-shadow .3s);
+        &:hover {
+            -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.09);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.09);
+            img {
+                @include transform(scale(1.08));
+            }
+        }
+    }
+    &__img{
+        width: 10rem;
+        min-width: 10rem;
+        height: 100%;
+        background-color: $bg-cards;
+        align-items: center;
+        justify-content: center;
+        padding: 1.4rem;
+        >img {
+            width: 100%;
+            max-height: 100%;
+        }
+    }
+    &__text {
+        padding: 1.4rem 0.9rem 1.4rem 1.7rem;
+        h4 {
+            font-size: .9rem;
+        }
+        p {
+            font-size: .73rem;
+            margin: 0;
         }
     }
 }
