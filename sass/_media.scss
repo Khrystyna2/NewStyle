@@ -278,6 +278,7 @@
         background: url(../icons/btn-menu-black.svg) no-repeat center center;
         background-size: 30px;
         margin-left: 20px;
+        display: block;
     }
     .mobile-screen {
         position: absolute;
@@ -830,7 +831,10 @@
         }
         &__group-info {
             align-items: center
-        }    
+        }   
+        &__group-select {
+            width: 290px;
+        } 
     }
 
     .model-slider {
@@ -855,6 +859,42 @@
         &__img{
             width: 10rem;
             min-width: 10rem;
+        }
+    }
+
+    .news {
+        margin-bottom: 2rem;
+    }
+    .box-news {
+        position: relative;
+        width: 45%;
+        margin-bottom: 4.3rem;
+        &::after {
+            right: -11%;
+        }
+        &:nth-of-type(3n)::after {
+            display: block;
+        }
+        &:nth-of-type(2n)::after {
+            display: none;
+        }
+        &__img {
+            margin-bottom: .8rem;
+        }
+        &__desc {
+            font-size: 0.8rem;
+            margin-bottom: .9rem;
+            height: 7.1rem;
+        }
+        &__link {
+            color: $black;
+            font-size: .9rem;
+        }
+    }
+
+    .second-menu__tow-link {
+        > .btn-border-black{
+            width: 12rem;
         }
     }
 
@@ -1078,8 +1118,7 @@
         width: 100%;
         margin-bottom: 1rem;
         &__title {
-            margin-right: 0;
-            margin-bottom: 1rem;
+            margin: 1.5rem 0 1rem;
         }
     }
 
@@ -1156,6 +1195,15 @@
             width: 8rem;
             min-width: 8rem;
         }
+    }
+    .box-news {
+        position: relative;
+        width: 100%;
+        margin: 1rem 0 2rem;
+        &::after {
+            display: none;
+        }   
+       
     }
 }
 
