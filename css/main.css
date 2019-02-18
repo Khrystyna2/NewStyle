@@ -600,6 +600,9 @@ a:hover {
   margin-right: 3.3rem;
   position: relative;
 }
+.menu__item:first-child {
+  margin-left: 1.3rem;
+}
 .menu__item_logo .logo {
   width: 8.9rem;
   height: 5.3rem;
@@ -2449,6 +2452,9 @@ a:hover {
   .menu__item {
     margin-right: 1.8rem;
   }
+  .menu__item:first-child {
+    margin-left: 2.4rem;
+  }
 
   .first-screen-image .slider-first-screen .slick-dots {
     right: 2%;
@@ -2592,6 +2598,7 @@ a:hover {
     display: block;
     width: 5.9rem;
     height: 3.4rem;
+    margin-right: 0.7rem;
   }
   .header-menu #language,
   .header-menu .phone {
@@ -3238,6 +3245,10 @@ a:hover {
     width: 20px;
     height: 20px;
     background-size: 20px !important;
+  }
+
+  .header-menu .mobil-logo {
+    margin-right: 0;
   }
 
   .group-box .search input#search:focus, .group-box .search input#search:active {

@@ -161,6 +161,9 @@
     &__item {
         margin-right: 3.3rem;
         position: relative;
+        &:first-child {
+            margin-left: 1.3rem;
+        }
         &_logo {
             .logo {
                 width: 8.9rem;

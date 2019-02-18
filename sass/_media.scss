@@ -79,6 +79,9 @@
     }
     .menu {
         &__item {
+            &:first-child {
+                margin-left: 2.4rem;
+            }
             margin-right: 1.8rem;
         }
     }
@@ -250,6 +253,7 @@
             display: block;
             width: 5.9rem;
             height: 3.4rem;
+            margin-right: 0.7rem;
         }
         #language,
         .phone {
@@ -903,6 +907,11 @@
         width: 20px;
         height: 20px;
         background-size: 20px !important;
+    }
+    .header-menu {
+        .mobil-logo {
+            margin-right: 0;
+        }
     }
     .group-box {
         .search {
