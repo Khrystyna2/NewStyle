@@ -295,6 +295,38 @@ a:hover {
   width: 100%;
 }
 
+.past-date {
+  color: #fff;
+  background-color: #000;
+  font-size: .55rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  right: 1.1rem;
+  top: -1.2rem;
+  line-height: .65rem;
+}
+.past-date > span {
+  font-weight: 700;
+  font-size: .74rem;
+  font-family: "Noto Serif", sans-serif;
+}
+
 .choose-language {
   width: 100%;
   height: 100vh;
@@ -2198,37 +2230,6 @@ a:hover {
 .box-news__link:hover {
   text-decoration: underline;
 }
-.box-news__date {
-  color: #fff;
-  background-color: #000;
-  font-size: .55rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 2.4rem;
-  width: 2.4rem;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  position: absolute;
-  right: 1.1rem;
-  top: -1.2rem;
-  line-height: .65rem;
-}
-.box-news__date > span {
-  font-weight: 700;
-  font-size: .74rem;
-  font-family: "Noto Serif", sans-serif;
-}
 
 .open-news p {
   margin-bottom: 1.4rem;
@@ -2257,6 +2258,61 @@ a:hover {
   left: 0;
   top: 0;
   line-height: 1.1rem;
+}
+
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.video__items {
+  position: relative;
+  width: 46%;
+  height: 15.8rem;
+  margin-bottom: 4.3rem;
+}
+.video__items::after {
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -9%;
+  border-right: 1px solid #E4E4E4;
+}
+.video__items:nth-of-type(2n)::after {
+  display: none;
+}
+.video__play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.video__play > p {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 0;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Noto Serif", sans-serif;
+  font-size: 0.9rem;
 }
 
 .footer {
@@ -2330,10 +2386,6 @@ a:hover {
 
   .container {
     max-width: 1750px;
-  }
-
-  .first-screen {
-    margin-top: -174px;
   }
 
   .catalog > .container {
@@ -2916,6 +2968,11 @@ a:hover {
   .open-news__subtitle {
     margin-top: 3rem;
   }
+
+  .video__items {
+    height: 12.8rem;
+    margin-bottom: 3.5rem;
+  }
 }
 @media only screen and (max-width: 767.8px) {
   .index-collections .info-box__item {
@@ -3155,8 +3212,13 @@ a:hover {
     font-size: .9rem;
   }
 
-  .second-menu__tow-link > .btn-border-black {
+  .second-menu__two-link > .btn-border-black {
     width: 12rem;
+  }
+
+  .video__items {
+    height: 10rem;
+    margin-bottom: 3.5rem;
   }
 }
 @media only screen and (max-width: 567.8px) {
@@ -3423,6 +3485,19 @@ a:hover {
   .cards__btn {
     width: 100%;
   }
+
+  .video__items {
+    margin: 1rem 0 2.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .video__items {
+    width: 100%;
+    height: 15rem;
+  }
+  .video__items::after {
+    display: none;
+  }
 }
 @media only screen and (max-width: 430px) {
   .our-goals__content {
@@ -3455,6 +3530,15 @@ a:hover {
     margin: 1rem 0 2rem;
   }
   .box-news::after {
+    display: none;
+  }
+
+  .video__items {
+    width: 100%;
+    height: 13rem;
+    margin-bottom: 3.5rem;
+  }
+  .video__items::after {
     display: none;
   }
 }

@@ -243,3 +243,24 @@ a:hover {
         width: 100%;
     }
 }
+
+.past-date {
+    color: $white;
+    background-color: $black;
+    font-size: .55rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 2.4rem;
+    width: 2.4rem;
+    @include border-radius(50%);
+    position: absolute;
+    right: 1.1rem;
+    top: -1.2rem;
+    line-height: .65rem;
+    >span {
+        font-weight: 700;
+        font-size: .74rem;
+        font-family: $font-fm-second;
+    }
+}
