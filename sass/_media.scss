@@ -121,25 +121,8 @@
             left: 2rem;
         }
     }
-    
-    .about-us{
-        &__video {
-            margin-bottom: 3rem;
-        }
-        &__desc{
-            margin-bottom: 3rem;
-        }
-        &__text{
-            margin-bottom: 5rem;
-        }
-    }
-
-    .slider-image {
-        margin-bottom: 3rem;
-    }
 
     .our-goals {
-        margin-bottom: 3rem;
         &__content {
             padding: 4rem 0;
             >p {
@@ -196,6 +179,10 @@
 }
 
 @media only screen and (max-width: 991.8px) {
+    .mb-120 {
+        margin-bottom: 3.5rem;
+    }
+
     body.overflow {
         overflow: hidden;
     }
@@ -374,11 +361,6 @@
             }
         }
     }
-    .index {
-        >section {
-            margin-bottom: 3.5rem;
-        }
-    }
     .first-screen {
         height: 100vh;
     }
@@ -532,7 +514,6 @@
     }
 
     .our-mission {
-        margin-bottom: 3rem;
         &__text {
             margin-top: 1rem;
         }
@@ -597,19 +578,12 @@
         }
     }
     .catalog-desc {
-        margin-bottom: 3rem;
         &__text{
             width: 100%;
         }
     }
 
     .open-model {
-        &__info{
-            margin-bottom: 3rem;
-            > .row {
-                margin-bottom: 3rem;
-            }
-        }
         &__desc {
             padding-left: 0;
         }
@@ -627,14 +601,7 @@
         }
     }
 
-    .other-models {
-        &__examples {
-            margin-bottom: 3rem;
-        }
-    }
-
     .other-goods {
-        margin-bottom: 3rem;
         &__cards {
             height: 8rem;
         }
@@ -649,7 +616,6 @@
     }
 
     .open-news {
-        margin-bottom: 3rem;
         p {
             margin-bottom: 1rem;
         }
@@ -876,13 +842,10 @@
         }
     }
 
-    .news {
-        margin-bottom: 2rem;
-    }
     .box-news {
         position: relative;
         width: 45%;
-        margin-bottom: 4.3rem;
+        margin-bottom: 4rem;
         &::after {
             right: -11.2%;
         }
@@ -914,6 +877,9 @@
 }
 
 @media only screen and (max-width: 567.8px) {
+    .mb-120 {
+        margin-bottom: 2rem;
+    }
     .slick-counter {
         display: none;
         .current,
@@ -940,9 +906,6 @@
                 }
             }
         }
-    }
-    .index>section {
-        margin-bottom: 2rem;
     }
     .first-screen {
         &::after {

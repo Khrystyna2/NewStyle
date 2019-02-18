@@ -116,6 +116,10 @@ a:hover {
     font-weight: 400;
 }
 
+.mb-120{
+    margin-bottom: 5.2rem;
+}
+
 .slick-counter {
     color: $black;
     width: 3.2rem;
@@ -235,7 +239,6 @@ a:hover {
 // slider image
 .slider-image {
     padding-bottom: 5rem;
-    margin-bottom: 5.2rem;
     &__items {
         width: 100%;
     }
