@@ -75,3 +75,37 @@
         }
     }
 }
+
+.open-news {
+    margin-bottom: 5.2rem;
+    p {
+        margin-bottom: 1.4rem;
+    }
+    &__date {
+        font-size: .74rem;
+        color: $color-footer-text;
+        margin-bottom: 1rem;
+    }
+    &__img {
+        width: 100%;
+        margin: 5.2rem 0;
+    }
+    &__subtitle {
+        font-size: 1.26rem;
+        margin-top: 5.2rem;
+    }
+    &__list {
+        li {
+            line-height: 1.6rem;
+            padding-left: 0.6rem;
+            position: relative;
+            &::after {
+                content: '.';
+                position: absolute;
+                left: 0;
+                top: 0;
+                line-height: 1.1rem;
+            }
+        }
+    }
+}

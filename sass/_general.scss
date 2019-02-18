@@ -10,6 +10,7 @@ $color-footer-text: #828282;
 $border-color: #D9D9D9;
 $bg-cards: #FBFBFB;
 
+
 @mixin border-radius($radius) {
     border-radius: $radius;
     -webkit-border-radius: $radius;

@@ -2264,6 +2264,38 @@ a:hover {
   font-family: "Noto Serif", sans-serif;
 }
 
+.open-news {
+  margin-bottom: 5.2rem;
+}
+.open-news p {
+  margin-bottom: 1.4rem;
+}
+.open-news__date {
+  font-size: .74rem;
+  color: #828282;
+  margin-bottom: 1rem;
+}
+.open-news__img {
+  width: 100%;
+  margin: 5.2rem 0;
+}
+.open-news__subtitle {
+  font-size: 1.26rem;
+  margin-top: 5.2rem;
+}
+.open-news__list li {
+  line-height: 1.6rem;
+  padding-left: 0.6rem;
+  position: relative;
+}
+.open-news__list li::after {
+  content: '.';
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1.1rem;
+}
+
 .footer {
   padding-bottom: 1.4rem;
 }
@@ -2944,6 +2976,22 @@ a:hover {
   .other-goods__text {
     padding: 0.8rem 0 0.8rem 1rem;
   }
+
+  .open-news {
+    margin-bottom: 3rem;
+  }
+  .open-news p {
+    margin-bottom: 1rem;
+  }
+  .open-news__date {
+    font-size: .8rem;
+  }
+  .open-news__img {
+    margin: 3rem 0;
+  }
+  .open-news__subtitle {
+    margin-top: 3rem;
+  }
 }
 @media only screen and (max-width: 767.8px) {
   .index-collections .info-box__item {
@@ -3167,7 +3215,7 @@ a:hover {
     margin-bottom: 4.3rem;
   }
   .box-news::after {
-    right: -11%;
+    right: -11.2%;
   }
   .box-news:nth-of-type(3n)::after {
     display: block;
@@ -3181,10 +3229,9 @@ a:hover {
   .box-news__desc {
     font-size: 0.8rem;
     margin-bottom: .9rem;
-    height: 7.1rem;
+    height: 7.5rem;
   }
   .box-news__link {
-    color: #000;
     font-size: .9rem;
   }
 

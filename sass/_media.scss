@@ -648,7 +648,21 @@
         }
     }
 
-
+    .open-news {
+        margin-bottom: 3rem;
+        p {
+            margin-bottom: 1rem;
+        }
+        &__date {
+            font-size: .8rem;
+        }
+        &__img {
+            margin: 3rem 0;
+        }
+        &__subtitle {
+            margin-top: 3rem;
+        }
+    }
     
 }
 
@@ -870,7 +884,7 @@
         width: 45%;
         margin-bottom: 4.3rem;
         &::after {
-            right: -11%;
+            right: -11.2%;
         }
         &:nth-of-type(3n)::after {
             display: block;
@@ -884,10 +898,9 @@
         &__desc {
             font-size: 0.8rem;
             margin-bottom: .9rem;
-            height: 7.1rem;
+            height: 7.5rem;
         }
         &__link {
-            color: $black;
             font-size: .9rem;
         }
     }
