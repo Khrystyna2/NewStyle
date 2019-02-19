@@ -1,0 +1,42 @@
+.download {
+    flex-wrap: wrap;
+    &__items {
+        width: 49%;
+        display: block;
+        border: 1px solid $gray;
+        padding: 1.4rem 1.8rem;
+        font-size: 0.9rem;
+        font-family: $font-fm-second;
+        font-weight: 700;
+        color: $black;
+        position: relative;
+        margin-bottom: 4.3rem;
+        margin-right: 2%;
+        &:nth-of-type(2n) {
+            margin-right: 0;
+        }
+        &:hover {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+        }
+    }
+    &__date {
+        display: block;
+        font-size: .74rem;
+        color: $color-footer-text;
+        font-family: $font-family;
+        margin-top: 0.4rem;
+    }
+    &__icon {
+        color: $white;
+        background-color: $black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.4rem;
+        width: 2.4rem;
+        @include border-radius(50%);
+        position: absolute;
+        right: 1.1rem;
+        top: -1.2rem;
+    }
+}

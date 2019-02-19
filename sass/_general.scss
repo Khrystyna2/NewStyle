@@ -72,7 +72,7 @@ iframe {
 }
 
 a:hover {
-    @include transition( color .3s);
+    @include transition( .4s ease);
 }
 
 .btn-border-white {

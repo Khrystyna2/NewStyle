@@ -222,10 +222,22 @@ $(document).ready(function () {
         }
     });
 
+    // menu
     $('.menu__item>span').click(function () {
-        $('.menu__item_subMenu').toggleClass('open');
         $(this).next('.menu__item_subMenu').slideToggle();
         $(this).closest('li').siblings('li').find('ul').slideUp();
+    });
+
+    function closeMenu(){
+        $('.menu__item>span').next('.menu__item_subMenu').slideUp();
+    }
+      
+    $(document.body).click( function(e) {
+        closeMenu();
+    });
+      
+    $(".menu__item>span").click( function(e) {
+        e.stopPropagation();
     });
 
     $('.language>li>a').click(function () {

@@ -100,11 +100,11 @@ iframe {
 }
 
 a:hover {
-  transition: color 0.3s;
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  -ms-transition: color 0.3s;
-  -o-transition: color 0.3s;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
 }
 
 .btn-border-white {
@@ -2409,6 +2409,61 @@ a:hover {
   display: none;
 }
 
+.download {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.download__items {
+  width: 49%;
+  display: block;
+  border: 1px solid #707070;
+  padding: 1.4rem 1.8rem;
+  font-size: 0.9rem;
+  font-family: "Noto Serif", sans-serif;
+  font-weight: 700;
+  color: #000;
+  position: relative;
+  margin-bottom: 4.3rem;
+  margin-right: 2%;
+}
+.download__items:nth-of-type(2n) {
+  margin-right: 0;
+}
+.download__items:hover {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.download__date {
+  display: block;
+  font-size: .74rem;
+  color: #828282;
+  font-family: "Round Pro", sans-serif;
+  margin-top: 0.4rem;
+}
+.download__icon {
+  color: #fff;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  right: 1.1rem;
+  top: -1.2rem;
+}
+
 .footer {
   padding-bottom: 1.4rem;
 }
@@ -3071,6 +3126,10 @@ a:hover {
     height: 12.8rem;
     margin-bottom: 3.5rem;
   }
+
+  .download__items {
+    margin-bottom: 3rem;
+  }
 }
 @media only screen and (max-width: 767.8px) {
   .index-collections .info-box__item {
@@ -3329,6 +3388,11 @@ a:hover {
 
   .blog__search {
     margin-bottom: 3rem;
+  }
+
+  .download__items {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
   }
 }
 @media only screen and (max-width: 567.8px) {
@@ -3610,6 +3674,11 @@ a:hover {
 
   .blog__search {
     margin-bottom: 2rem;
+  }
+
+  .download__items {
+    width: 100%;
+    margin-right: 0;
   }
 }
 @media only screen and (max-width: 500px) {
