@@ -327,6 +327,50 @@ a:hover {
   font-family: "Noto Serif", sans-serif;
 }
 
+.article {
+  position: relative;
+  margin-bottom: 4.3rem;
+}
+.article__img {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 1.08rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.article__img > img {
+  width: 100%;
+}
+.article__img:hover img {
+  transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -o-transform: scale(1.08);
+}
+.article__title {
+  font-size: 0.91rem;
+  margin-bottom: 0.4rem;
+}
+.article__desc {
+  font-size: 0.74rem;
+  margin-bottom: 1.08rem;
+}
+.article__desc p {
+  margin: 0;
+}
+.article__link {
+  color: #000;
+  font-size: .7rem;
+}
+.article__link:hover {
+  text-decoration: underline;
+}
+
 .choose-language {
   width: 100%;
   height: 100vh;
@@ -2168,9 +2212,9 @@ a:hover {
 }
 
 .news-content {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -2181,7 +2225,7 @@ a:hover {
 .box-news {
   position: relative;
   width: 27.33%;
-  margin-bottom: 4.3rem;
+  margin-right: 9%;
 }
 .box-news::after {
   content: '';
@@ -2192,46 +2236,18 @@ a:hover {
   right: -16.5%;
   border-right: 1px solid #E4E4E4;
 }
+.box-news:nth-of-type(3n) {
+  margin-right: 0;
+}
 .box-news:nth-of-type(3n)::after {
   display: none;
 }
-.box-news__img {
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 1.08rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.box-news__img:hover img {
-  transform: scale(1.08);
-  -webkit-transform: scale(1.08);
-  -moz-transform: scale(1.08);
-  -ms-transform: scale(1.08);
-  -o-transform: scale(1.08);
-}
-.box-news__title {
-  font-size: 0.91rem;
-  margin-bottom: 0.4rem;
-}
 .box-news__desc {
-  font-size: 0.74rem;
-  margin-bottom: 1.08rem;
   height: 7.1rem;
   overflow: hidden;
 }
 .box-news__desc p {
   margin: 0;
-}
-.box-news__link {
-  color: #000;
-  font-size: .7rem;
-}
-.box-news__link:hover {
-  text-decoration: underline;
 }
 
 .open-news p {
@@ -2316,6 +2332,81 @@ a:hover {
   font-weight: 700;
   font-family: "Noto Serif", sans-serif;
   font-size: 0.9rem;
+}
+
+.blog__search {
+  width: 100%;
+  height: 3.1rem;
+  margin-bottom: 4.3rem;
+  border: 1px solid #707070;
+  position: relative;
+}
+.blog__search > input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  font-size: .9rem;
+  padding: 0 3.8rem 0 1.6rem;
+}
+.blog__search > input[type='search']::-webkit-input-placeholder {
+  font-size: .74rem;
+  color: #828282;
+}
+.blog__search > input[type='search']:-ms-input-placeholder {
+  font-size: .74rem;
+  color: #828282;
+}
+.blog__search > input[type='search']::-ms-input-placeholder {
+  font-size: .74rem;
+  color: #828282;
+}
+.blog__search > input[type='search']::placeholder {
+  font-size: .74rem;
+  color: #828282;
+}
+.blog__search-icon {
+  position: absolute;
+  right: 1.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  z-index: 0;
+  color: #828282;
+  font-size: 0.74rem;
+  cursor: pointer;
+}
+.blog__content {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.blog__post {
+  width: 46%;
+}
+.blog__post::after {
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -9%;
+  border-right: 1px solid #E4E4E4;
+}
+.blog__post:nth-of-type(2n)::after {
+  display: none;
 }
 
 .footer {
@@ -3193,30 +3284,38 @@ a:hover {
     min-width: 10rem;
   }
 
-  .box-news {
-    position: relative;
-    width: 45%;
+  .article {
     margin-bottom: 4rem;
   }
+  .article__img {
+    margin-bottom: .8rem;
+  }
+  .article__desc {
+    font-size: 0.8rem;
+    margin-bottom: .9rem;
+  }
+  .article__link {
+    font-size: .9rem;
+  }
+
+  .box-news {
+    width: 45%;
+    margin-right: 9.9%;
+  }
   .box-news::after {
-    right: -11.2%;
+    right: -11.1%;
+  }
+  .box-news:nth-of-type(3n) {
+    margin-right: 9.9%;
+  }
+  .box-news:nth-of-type(2n) {
+    margin-right: 0;
   }
   .box-news:nth-of-type(3n)::after {
     display: block;
   }
   .box-news:nth-of-type(2n)::after {
     display: none;
-  }
-  .box-news__img {
-    margin-bottom: .8rem;
-  }
-  .box-news__desc {
-    font-size: 0.8rem;
-    margin-bottom: .9rem;
-    height: 7.5rem;
-  }
-  .box-news__link {
-    font-size: .9rem;
   }
 
   .second-menu__two-link > .btn-border-black {
@@ -3226,6 +3325,10 @@ a:hover {
   .video__items {
     height: 10rem;
     margin-bottom: 3.5rem;
+  }
+
+  .blog__search {
+    margin-bottom: 3rem;
   }
 }
 @media only screen and (max-width: 567.8px) {
@@ -3497,8 +3600,16 @@ a:hover {
     width: 100%;
   }
 
+  .article {
+    margin: 1rem 0 2rem;
+  }
+
   .video__items {
     margin: 1rem 0 2.5rem;
+  }
+
+  .blog__search {
+    margin-bottom: 2rem;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -3507,6 +3618,13 @@ a:hover {
     height: 15rem;
   }
   .video__items::after {
+    display: none;
+  }
+
+  .blog__post {
+    width: 100%;
+  }
+  .blog__post:nth-of-type(2n)::after {
     display: none;
   }
 }
@@ -3536,9 +3654,7 @@ a:hover {
   }
 
   .box-news {
-    position: relative;
     width: 100%;
-    margin: 1rem 0 2rem;
   }
   .box-news::after {
     display: none;
