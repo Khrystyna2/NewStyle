@@ -1451,6 +1451,34 @@ a:hover {
 .second-menu::after {
   top: 5.9rem;
 }
+.second-menu__btn {
+  position: relative;
+  cursor: pointer;
+}
+.second-menu__btn > span {
+  width: 100%;
+  display: block;
+}
+.second-menu__dropdown {
+  position: absolute;
+  top: 100%;
+  margin-top: 1px;
+  left: -1px;
+  width: calc(100% + 2px);
+  padding: 1.1rem 0;
+  border: 1px solid #E4E4E4;
+  text-align: left;
+  font-size: .74rem;
+  z-index: 10;
+  background-color: #fff;
+  display: none;
+}
+.second-menu__dropdown a {
+  color: #000;
+  padding: 0 1.3rem 0.5rem 1.3rem;
+  width: 100%;
+  display: block;
+}
 
 .about-us__video {
   width: 100%;
