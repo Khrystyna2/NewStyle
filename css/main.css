@@ -843,6 +843,7 @@ a:hover {
   border-left: 1px solid #fff;
   animation: height 2s ease infinite;
   -webkit-animation: height 2s ease infinite;
+  z-index: 10;
 }
 .first-screen .container {
   position: relative;
@@ -1016,9 +1017,10 @@ a:hover {
 .first-screen-text {
   color: #fff;
   text-align: center;
-  margin-top: 8.3rem;
+  margin: 8.3rem auto 0;
   position: relative;
   z-index: 2;
+  width: 74%;
 }
 .first-screen-text__title {
   font-size: 2.26rem;
@@ -1036,6 +1038,20 @@ a:hover {
   content: '';
   position: absolute;
   top: -4.2rem;
+  left: 50%;
+  height: 40px;
+  border-left: 1px solid #fff;
+}
+.first-screen-text__group-btn {
+  position: relative;
+}
+.first-screen-text__group-btn .first-screen__btn::before {
+  display: none;
+}
+.first-screen-text__group-btn::before {
+  content: '';
+  position: absolute;
+  top: 2.2rem;
   left: 50%;
   height: 40px;
   border-left: 1px solid #fff;
@@ -2581,6 +2597,49 @@ a:hover {
   text-align: center;
 }
 
+.dealers {
+  width: 100%;
+  border: 1px solid #E4E4E4;
+  padding: 2.6rem 5.65rem;
+  background-color: #FBFBFB;
+  margin-bottom: 3rem;
+}
+.dealers__title {
+  margin-bottom: 4.3rem;
+  text-align: center;
+  position: relative;
+}
+.dealers__title::after {
+  content: '';
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  height: 1.7rem;
+  border-left: 1px solid #000;
+}
+
+.list-contact__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.list-contact__col-1 {
+  width: 38.5%;
+  padding: 0 .8rem;
+}
+.list-contact__col-2 {
+  width: 35%;
+  padding: 0 .8rem;
+}
+.list-contact__col-3 {
+  width: 26.5%;
+  padding: 0 .8rem;
+  text-align: right;
+}
+.list-contact__col-3 a {
+  color: #000;
+}
+
 .footer {
   padding-bottom: 1.4rem;
 }
@@ -3011,6 +3070,10 @@ a:hover {
     right: 5%;
   }
 
+  .first-screen-text {
+    width: 100%;
+  }
+
   .social-link__first-screen {
     display: none;
   }
@@ -3285,8 +3348,17 @@ a:hover {
   .partners__img {
     height: 8.7rem;
   }
+
+  .dealers {
+    padding: 2rem 3rem;
+    margin-bottom: 2rem;
+  }
 }
 @media only screen and (max-width: 767.8px) {
+  .first-screen-text__group-btn .first-screen__btn {
+    width: 45%;
+  }
+
   .index-collections .info-box__item {
     width: 160px;
     margin-bottom: 1rem;
@@ -3559,6 +3631,10 @@ a:hover {
   .partners__img {
     height: 7.7rem;
   }
+
+  .dealers {
+    padding: 1.6rem 1rem;
+  }
 }
 @media only screen and (max-width: 567.8px) {
   .mb-120 {
@@ -3603,6 +3679,9 @@ a:hover {
   }
   .first-screen-text .first-screen__btn {
     width: 100%;
+  }
+  .first-screen-text__group-btn .first-screen__btn {
+    width: 46%;
   }
 
   .choose-door__block {
@@ -3854,6 +3933,34 @@ a:hover {
     width: 64%;
   }
 }
+@media only screen and (max-width: 550px) {
+  .first-screen-text__group-btn {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .first-screen-text__group-btn .first-screen__btn {
+    width: 100%;
+    display: block;
+    margin: .5rem auto;
+  }
+  .first-screen-text__group-btn::before {
+    display: none;
+  }
+
+  .list-contact__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 0.6rem;
+  }
+  .list-contact__col-1, .list-contact__col-2, .list-contact__col-3 {
+    width: auto;
+    text-align: left;
+    padding: 0 .5rem 0 0;
+  }
+  .list-contact__col-1 p, .list-contact__col-2 p, .list-contact__col-3 p {
+    margin: 0;
+  }
+}
 @media only screen and (max-width: 500px) {
   .video__items {
     width: 100%;
@@ -3945,7 +4052,7 @@ a:hover {
   }
 
   .first-screen-text {
-    margin-top: 4rem;
+    margin: 4rem auto 0;
   }
   .first-screen-text__title {
     font-size: 1.5rem;

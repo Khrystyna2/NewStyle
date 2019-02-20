@@ -1,0 +1,42 @@
+.dealers {
+    width: 100%;
+    border: 1px solid $light-gray;
+    padding: 2.6rem 5.65rem;
+    background-color: $white-tint;
+    margin-bottom: 3rem;
+    &__title {
+        margin-bottom: 4.3rem;
+        text-align: center;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -3rem;
+            left: 50%;
+            height: 1.7rem;
+            border-left: 1px solid $black;
+        }
+    }
+}
+
+.list-contact{
+    &__item {
+        display: flex;
+    }
+    &__col-1 {
+        width: 38.5%;
+        padding: 0 .8rem;
+    }
+    &__col-2 {
+        width: 35%;
+        padding: 0 .8rem;
+    }
+    &__col-3 {
+        width: 26.5%;
+        padding: 0 .8rem;
+        text-align: right;
+        a {
+            color: $black;
+        }
+    }
+}

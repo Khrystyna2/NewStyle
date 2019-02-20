@@ -396,6 +396,10 @@
             }
         }
     }
+    .first-screen-text {
+        width: 100%;
+    }
+
     .social-link__first-screen {
         display: none;
     }
@@ -688,9 +692,23 @@
             height: 8.7rem;
         }
     }
+
+    .dealers {
+        padding: 2rem 3rem;
+        margin-bottom: 2rem;
+    }
 }
 
 @media only screen and (max-width: 767.8px) {
+    .first-screen-text {
+        &__group-btn {
+            .first-screen__btn {
+                width: 45%;
+            }
+        }
+    
+    }
+
     .index-collections {
         .info-box {
             &__item {
@@ -972,6 +990,10 @@
         }
     }
 
+    .dealers {
+        padding: 1.6rem 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 567.8px) {
@@ -1026,7 +1048,13 @@
         .first-screen__btn {
             width: 100%;
         }
+        &__group-btn {
+            .first-screen__btn {
+                width: 46%;
+            }
+        }
     }
+
     .choose-door {
         &__block {
             width: 100%;
@@ -1274,6 +1302,38 @@
     }
 }
 
+@media only screen and (max-width: 550px) {
+    .first-screen-text {
+        &__group-btn {
+            flex-wrap: wrap;
+            .first-screen__btn {
+                width: 100%;
+                display: block;
+                margin: .5rem auto;
+            }
+            &::before {
+                display: none;
+            }
+        }
+    }
+    .list-contact{
+        &__item {
+            flex-wrap: wrap;
+            margin-bottom: 0.6rem;
+        }
+        &__col-1,
+        &__col-2,
+        &__col-3 {
+            width: auto;
+            text-align: left;
+            padding: 0 .5rem 0 0;
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .video {
         &__items {
@@ -1389,7 +1449,7 @@
         }
     }
     .first-screen-text {
-        margin-top: 4rem;
+        margin: 4rem auto 0;
         &__title {
             font-size: 1.5rem;
         }
