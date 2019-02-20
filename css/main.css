@@ -2643,6 +2643,56 @@ a:hover {
   color: #000;
 }
 
+.vacancies__content {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.vacancies__item {
+  width: 46%;
+  position: relative;
+  margin-bottom: 4.3rem;
+}
+.vacancies__item::after {
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -9%;
+  border-right: 1px solid #E4E4E4;
+}
+.vacancies__item:nth-of-type(2n)::after {
+  display: none;
+}
+.vacancies__text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  font-size: .74rem;
+  padding: 0 2.2rem 1.7rem 2.2rem;
+}
+.vacancies__title {
+  font-size: 1rem;
+}
+.vacancies__link {
+  font-size: .7rem;
+  color: #fff;
+}
+
 .footer {
   padding-bottom: 1.4rem;
 }
@@ -2770,6 +2820,10 @@ a:hover {
   }
   .certificates__items_big {
     width: 18rem;
+  }
+
+  .vacancies__text {
+    padding: 0 1.6rem 1.2rem 1.6rem;
   }
 }
 @media only screen and (max-width: 1440px) {
@@ -3001,6 +3055,9 @@ a:hover {
   }
   .mobile-screen .menu__item_logo .logo {
     display: none;
+  }
+  .mobile-screen .menu__item:first-child {
+    margin-left: 0;
   }
   .mobile-screen .menu__item > span {
     position: relative;
@@ -3357,6 +3414,10 @@ a:hover {
     padding: 2rem 3rem;
     margin-bottom: 2rem;
   }
+
+  .vacancies__text {
+    padding: 0 1rem 1.2rem 1rem;
+  }
 }
 @media only screen and (max-width: 767.8px) {
   .first-screen-text__group-btn .first-screen__btn {
@@ -3639,6 +3700,27 @@ a:hover {
   .dealers,
   .retail-outlets {
     padding: 1.6rem 1rem;
+  }
+
+  .vacancies__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: .8rem;
+    padding: 0 0.5rem 0.6rem 0.5rem;
+  }
+  .vacancies__title {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  .vacancies__link {
+    font-size: .8rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
 }
 @media only screen and (max-width: 567.8px) {
@@ -3979,6 +4061,14 @@ a:hover {
     width: 100%;
   }
   .blog__post:nth-of-type(2n)::after {
+    display: none;
+  }
+
+  .vacancies__item {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .vacancies__item::after {
     display: none;
   }
 }

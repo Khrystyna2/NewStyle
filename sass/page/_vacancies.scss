@@ -1,0 +1,43 @@
+.vacancies {
+    &__content {
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 46%;
+        position: relative;
+        margin-bottom: 4.3rem;
+        &::after {
+            content: '';
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -9%;
+            border-right: 1px solid $light-gray;
+        }
+        &:nth-of-type(2n)::after {
+            display: none;
+        }
+    }
+    &__text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        align-items: flex-end;
+        justify-content: space-between;
+        color: $white;
+        font-size: .74rem;
+        padding: 0 2.2rem 1.7rem 2.2rem;
+    }
+    &__title {
+        font-size: 1rem;
+    }
+    &__link {
+        font-size: .7rem;
+        color: $white;
+    }
+    
+}
