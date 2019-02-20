@@ -453,7 +453,7 @@ $(document).ready(function () {
 
     // slider on mobile screen
     function slideDetect() {
-        $('.info-box').not('.slick-initialized').slick({
+        $('.info-box, .partners__box').not('.slick-initialized').slick({
             dots: false,
             arrows: false,
             slidesToShow: 3,
@@ -478,7 +478,7 @@ $(document).ready(function () {
 
     $(window).resize(function () {
         if ($(window).width() > 550) {
-            $('.info-box').slick('unslick');
+            $('.info-box, .partners__box').slick('unslick');
         }
         else if ($(window).width() <= 550) {
             slideDetect()
