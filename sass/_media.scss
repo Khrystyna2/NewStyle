@@ -693,7 +693,8 @@
         }
     }
 
-    .dealers {
+    .dealers,
+    .retail-outlets {
         padding: 2rem 3rem;
         margin-bottom: 2rem;
     }
@@ -990,7 +991,8 @@
         }
     }
 
-    .dealers {
+    .dealers,
+    .retail-outlets {
         padding: 1.6rem 1rem;
     }
 
@@ -1458,6 +1460,11 @@
             &::before {
                 height: 0;
                 border-left: none;
+            }
+        }
+        &__group-btn {
+            &::before {
+                display: none;
             }
         }
     } // first screen end

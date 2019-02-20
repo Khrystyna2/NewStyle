@@ -2597,19 +2597,22 @@ a:hover {
   text-align: center;
 }
 
-.dealers {
+.dealers,
+.retail-outlets {
   width: 100%;
   border: 1px solid #E4E4E4;
   padding: 2.6rem 5.65rem;
   background-color: #FBFBFB;
   margin-bottom: 3rem;
 }
-.dealers__title {
+.dealers__title,
+.retail-outlets__title {
   margin-bottom: 4.3rem;
   text-align: center;
   position: relative;
 }
-.dealers__title::after {
+.dealers__title::after,
+.retail-outlets__title::after {
   content: '';
   position: absolute;
   bottom: -3rem;
@@ -3349,7 +3352,8 @@ a:hover {
     height: 8.7rem;
   }
 
-  .dealers {
+  .dealers,
+  .retail-outlets {
     padding: 2rem 3rem;
     margin-bottom: 2rem;
   }
@@ -3632,7 +3636,8 @@ a:hover {
     height: 7.7rem;
   }
 
-  .dealers {
+  .dealers,
+  .retail-outlets {
     padding: 1.6rem 1rem;
   }
 }
@@ -4063,6 +4068,9 @@ a:hover {
   .first-screen-text .first-screen__btn::before {
     height: 0;
     border-left: none;
+  }
+  .first-screen-text__group-btn::before {
+    display: none;
   }
 
   .choose-language__menu {
