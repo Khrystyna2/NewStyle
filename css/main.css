@@ -3415,6 +3415,9 @@ a:hover {
     margin-bottom: 2rem;
   }
 
+  .vacancies__item {
+    margin-bottom: 3rem;
+  }
   .vacancies__text {
     padding: 0 1rem 1.2rem 1rem;
   }
@@ -3702,6 +3705,9 @@ a:hover {
     padding: 1.6rem 1rem;
   }
 
+  .vacancies__item {
+    margin-bottom: 2rem;
+  }
   .vacancies__text {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4007,6 +4013,22 @@ a:hover {
     margin-bottom: 2rem;
   }
 
+  .box-news {
+    margin-right: 9.9%;
+  }
+  .box-news:nth-of-type(3n) {
+    margin-right: 9.9%;
+  }
+  .box-news:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  .box-news:nth-of-type(3n)::after {
+    display: block;
+  }
+  .box-news:nth-of-type(2n)::after {
+    display: none;
+  }
+
   .download__items {
     width: 100%;
     margin-right: 0;
@@ -4066,7 +4088,6 @@ a:hover {
 
   .vacancies__item {
     width: 100%;
-    margin-bottom: 2rem;
   }
   .vacancies__item::after {
     display: none;
@@ -4099,8 +4120,15 @@ a:hover {
 
   .box-news {
     width: 100%;
+    margin-right: 0;
   }
   .box-news::after {
+    display: none;
+  }
+  .box-news:nth-of-type(3n) {
+    margin-right: 0;
+  }
+  .box-news:nth-of-type(3n)::after {
     display: none;
   }
 
