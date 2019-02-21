@@ -78,6 +78,12 @@
             padding: 0 1.6rem 1.2rem 1.6rem;
         } 
     }
+    .region {
+        &__info {
+            padding: 2rem 1rem;
+            font-size: 0.7rem;
+        }
+    }
 }
 
 @media only screen and (max-width: 1440px) {
@@ -291,7 +297,7 @@
         width: 30px;
         height: 30px;
         background: url(../icons/btn-menu-black.svg) no-repeat center center;
-        background-size: 30px;
+        background-size: 40px;
         margin-left: 20px;
         display: block;
     }
@@ -719,6 +725,28 @@
         padding: 2rem 2.2rem;
         margin-top: 3rem;
     }
+    
+.region {
+    .tabs-content {
+        height: 25rem;
+        &__info {
+            top: auto;
+        }
+    }
+    &__select-btn {
+        height: 2.3rem;
+        width: 12.8rem;
+    }
+    &__maps {
+        height: 19rem;
+        position: relative;
+    }
+    &__info {
+        position: relative;
+        width: 100%;
+    }
+   
+}
 }
 
 @media only screen and (max-width: 767.8px) {
@@ -746,7 +774,7 @@
             width: 3.186rem;
             height: 3.2rem;
             padding: 0.6rem 0;
-            border-right: 1px solid;
+            border: 1px solid $black;
             float: left;
         }
     }
@@ -854,6 +882,12 @@
     .about-us{
         &__video {
             max-height: 22rem;
+        }
+    }
+
+    .catalog {
+        .line-top{
+           display: none;
         }
     }
 
@@ -1056,6 +1090,18 @@
             .form-info {
                 order: 1;
             }
+        }
+    }
+
+    .region{
+        &__select {
+            .nav-tabs {
+                display: block;
+            }
+        }
+        &__select-btn {
+            height: 3.2rem;
+            width: 10.8rem;
         }
     }
 
@@ -1381,8 +1427,23 @@
         &__items_big {
             width: 64%;
         }
-        
     }
+    .region {
+        .tabs-content {
+            height: auto;
+            &__info {
+                position: relative;
+                margin-top: 1.4rem;
+            }
+        }
+        &__info {
+            font-size: 0.82rem;
+            .list-contact__item {
+                margin-left: 0;
+            }
+        }        
+    }
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -1478,7 +1539,6 @@
         }
     }
 
-    
     .box-news {
         width: 100%;
         margin-right: 0;
@@ -1520,6 +1580,21 @@
         &__btn {
             width: 100%;
         }
+    }
+
+    .region {
+        &__select-btn{
+            display: none;
+        }    
+        .nav-tabs {
+            margin: 0 auto;
+            &__items {
+                border-right: none;
+                &:last-child {
+                    border-right: 1px solid $black;
+                }
+            }
+        }   
     }
 }
 

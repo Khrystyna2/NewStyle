@@ -313,7 +313,7 @@ $(document).ready(function () {
 
     $('.nav-tabs__items').on('click', function () {
         var dataTab = $(this).data('tab');
-        var getBlock = $(this).closest('.select-collections');
+        var getBlock = $(this).closest('.select-collections, .region');
         getBlock.find('#tabs-content>div[data-tab=' + dataTab + ']').addClass('active').siblings().removeClass('active');
     });
     // tabs end
@@ -634,6 +634,5 @@ $(document).ready(function () {
           parent.append('<small>' + $(this)[0].files[i].name + '</small>')
         }
     });
-
 
 });

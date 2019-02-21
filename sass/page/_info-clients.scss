@@ -41,3 +41,76 @@
         }
     }
 }
+
+.region {
+    width: 100%;
+    position: relative;
+    .box-tabs-content {
+        position: relative;
+    }
+    &__select {
+        position: relative;
+        z-index: 1;
+    }
+    &__select-btn {
+        height: 3.3rem;
+        width: 15.8rem;
+        border: 1px solid $gray;
+        border-right: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__maps {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        >#map {
+            height: 100%;
+        }
+    }
+    &__info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        width: 42%;
+        padding: 3rem 1.5rem 2.1rem 1.5rem;
+        font-size: 0.82rem;
+        border: 1px solid $light-gray;
+        z-index: 10;
+        .list-contact__item {
+            margin-bottom: 0.3rem;
+            margin-left: -0.8rem;
+            p {
+                margin: 0;
+            }
+        }
+        &::before {
+            content: '';
+            height: 1.8rem;
+            border-left: 1px solid #000;
+            position: absolute;
+            left: 50%;
+            top: -.8rem;
+        }
+    }
+    &__title {
+        font-size: 1.26rem;
+    }
+    &__manager {
+        font-size: 0.7rem;
+        >span {
+            color: $gray;
+            text-decoration: underline;
+        }
+    }
+    &__btn {
+        width: 12.8rem;
+        padding: 0.6rem 0;
+        margin-top: 1.6rem;
+    }
+}
