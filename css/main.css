@@ -107,6 +107,33 @@ a:hover {
   -o-transition: 0.4s ease;
 }
 
+input {
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  font-size: .9rem;
+  color: #000;
+}
+input[type='search']::-webkit-input-placeholder, input[type='text']::-webkit-input-placeholder {
+  font-size: .74rem;
+  color: #828282;
+}
+input[type='search']:-ms-input-placeholder, input[type='text']:-ms-input-placeholder {
+  font-size: .74rem;
+  color: #828282;
+}
+input[type='search']::-ms-input-placeholder, input[type='text']::-ms-input-placeholder {
+  font-size: .74rem;
+  color: #828282;
+}
+input[type='search']::placeholder, input[type='text']::placeholder {
+  font-size: .74rem;
+  color: #828282;
+}
+
 .dws-progress-bar {
   position: absolute;
   top: 50%;
@@ -122,7 +149,7 @@ a:hover {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: "Noto Serif", sans-serif;
   font-weight: 700;
   color: #000;
@@ -817,13 +844,6 @@ a:hover {
 .group-box .search input#search {
   width: 0;
   height: 50px;
-  border: none;
-  font-size: .9rem;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
   position: absolute;
   right: 0;
   top: 0;
@@ -2419,30 +2439,7 @@ a:hover {
 .blog__search > input {
   width: 100%;
   height: 100%;
-  border: none;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  font-size: .9rem;
   padding: 0 3.8rem 0 1.6rem;
-}
-.blog__search > input[type='search']::-webkit-input-placeholder {
-  font-size: .74rem;
-  color: #828282;
-}
-.blog__search > input[type='search']:-ms-input-placeholder {
-  font-size: .74rem;
-  color: #828282;
-}
-.blog__search > input[type='search']::-ms-input-placeholder {
-  font-size: .74rem;
-  color: #828282;
-}
-.blog__search > input[type='search']::placeholder {
-  font-size: .74rem;
-  color: #828282;
 }
 .blog__search-icon {
   position: absolute;
@@ -2722,6 +2719,136 @@ a:hover {
 .vacancies__link {
   font-size: .7rem;
   color: #fff;
+}
+
+.vacancies-open__city {
+  color: #828282;
+  display: block;
+  font-size: .74rem;
+  margin-bottom: 1rem;
+}
+.vacancies-open__list {
+  margin-top: 3rem;
+}
+.vacancies-open__list > h3 {
+  font-size: 1.26rem;
+}
+
+.form-vacancies {
+  width: 100%;
+  padding: 2.6rem 5.2rem;
+  border-style: solid;
+  border-image-width: 1rem;
+  border-image-source: url(../image/border-form.png);
+  border-image-slice: 30;
+  border-image-repeat: round;
+  text-align: center;
+  margin-top: 5.2rem;
+}
+.form-vacancies__title {
+  margin-bottom: 4.3rem;
+  position: relative;
+}
+.form-vacancies__title::after {
+  content: '';
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  height: 1.7rem;
+  border-left: 1px solid #000;
+}
+.form-vacancies__form {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.form-vacancies__form input,
+.form-vacancies__form textarea,
+.form-vacancies__form .form-info {
+  width: 45%;
+}
+.form-vacancies__form textarea::-webkit-input-placeholder {
+  font-size: .74rem;
+  color: #828282;
+}
+.form-vacancies__form textarea:-ms-input-placeholder {
+  font-size: .74rem;
+  color: #828282;
+}
+.form-vacancies__form textarea::-ms-input-placeholder {
+  font-size: .74rem;
+  color: #828282;
+}
+.form-vacancies__form textarea::placeholder {
+  font-size: .74rem;
+  color: #828282;
+}
+.form-vacancies__form input {
+  height: 3.1rem;
+  border: 1px solid #707070;
+  padding: 0 1.6rem;
+  margin-bottom: 2.17rem;
+}
+.form-vacancies__form textarea {
+  border: 1px solid #707070;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  padding: 1rem 1.6rem;
+  resize: none;
+  height: 12.24rem;
+  font-size: .9rem;
+}
+.form-vacancies__form textarea:focus {
+  outline: none;
+}
+.form-vacancies__form .vacancies__name {
+  width: 100%;
+  height: 3.1rem;
+  background-color: #E4E4E4;
+  line-height: 3.1rem;
+  padding: 0 1.6rem;
+}
+.form-vacancies__form .send-resume,
+.form-vacancies__form .vacancies__name {
+  font-size: .74rem;
+  color: #828282;
+  margin-bottom: 2.17rem;
+  text-align: left;
+}
+.form-vacancies__form .send-resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form-vacancies__form .send-resume > input {
+  display: none;
+}
+.form-vacancies__form .send-resume img {
+  margin-right: 0.6rem;
+}
+.form-vacancies__form .send-resume span {
+  text-decoration: underline;
+}
+.form-vacancies__form .send-resume > small {
+  display: block;
+  margin-top: 0.5rem;
+}
+.form-vacancies__btn {
+  width: 13.4rem;
+  height: 3.1rem;
 }
 
 .footer {
@@ -3452,6 +3579,11 @@ a:hover {
   .vacancies__text {
     padding: 0 1rem 1.2rem 1rem;
   }
+
+  .form-vacancies {
+    padding: 2rem 2.2rem;
+    margin-top: 3rem;
+  }
 }
 @media only screen and (max-width: 767.8px) {
   .first-screen-text__group-btn .first-screen__btn {
@@ -3758,6 +3890,24 @@ a:hover {
     font-size: .8rem;
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+
+  .vacancies-open__list {
+    margin-top: 2rem;
+  }
+
+  .form-vacancies__form input,
+  .form-vacancies__form textarea,
+  .form-vacancies__form .form-info {
+    width: 100%;
+  }
+  .form-vacancies__form textarea {
+    margin-bottom: 2.17rem;
+  }
+  .form-vacancies__form .form-info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 @media only screen and (max-width: 567.8px) {
@@ -4179,6 +4329,13 @@ a:hover {
   .certificates__items_big {
     width: 100%;
   }
+
+  .form-vacancies {
+    padding: 2rem 1.4rem;
+  }
+  .form-vacancies__btn {
+    width: 100%;
+  }
 }
 @media only screen and (max-height: 550px) {
   .first-screen {
@@ -4260,5 +4417,4 @@ a:hover {
     width: auto !important;
   }
 }
-
 /*# sourceMappingURL=main.css.map */

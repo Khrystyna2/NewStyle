@@ -714,6 +714,11 @@
             padding: 0 1rem 1.2rem 1rem;
         } 
     }
+
+    .form-vacancies {
+        padding: 2rem 2.2rem;
+        margin-top: 3rem;
+    }
 }
 
 @media only screen and (max-width: 767.8px) {
@@ -1029,6 +1034,28 @@
         &__link {
             font-size: .8rem;
             align-self: flex-end;
+        }
+    }
+
+    .vacancies-open {
+        &__list {
+            margin-top: 2rem;
+        }
+    }
+    
+    .form-vacancies {
+        &__form {
+            input,
+            textarea,
+            .form-info {
+                width: 100%;
+            }
+            textarea {
+                margin-bottom: 2.17rem;
+            }
+            .form-info {
+                order: 1;
+            }
         }
     }
 
@@ -1486,6 +1513,13 @@
             width: 100%;
         }
         
+    }
+
+    .form-vacancies {
+        padding: 2.4rem 1.4rem;
+        &__btn {
+            width: 100%;
+        }
     }
 }
 

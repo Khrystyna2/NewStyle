@@ -625,13 +625,15 @@ $(document).ready(function () {
     });
  
 
-    // let imageCounter = $('img').length,
-    //     percent = 100 / imageCounter;
-    // let iframeCounter = $('iframe').length
-
-
-    // console.log(imageCounter, percent);
-    // console.log(iframeCounter);
+    // input type file
+    $('#send-resume').change(function() {
+        var numfiles = $(this)[0].files.length;
+        var parent = $(this).closest('.send-resume');
+        parent.find('small').remove();
+        for (i = 0; i < numfiles; i++) { 
+          parent.append('<small>' + $(this)[0].files[i].name + '</small>')
+        }
+    });
 
 
 });
