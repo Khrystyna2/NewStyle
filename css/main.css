@@ -2914,6 +2914,10 @@ input[type='search']::placeholder, input[type='text']::placeholder {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.form-vacancies__form .send-resume > label {
+  cursor: pointer;
+  margin: 0;
+}
 .form-vacancies__form .send-resume > input {
   display: none;
 }

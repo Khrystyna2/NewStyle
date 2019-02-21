@@ -127,6 +127,10 @@
             text-align: left
         }
         .send-resume {
+            >label {
+                cursor: pointer;
+                margin: 0;
+            }
             >input{
                 display: none;
             }
