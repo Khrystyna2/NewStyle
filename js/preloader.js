@@ -11,9 +11,9 @@ $(document).ready(function () {
 
         $(".dws-progress-bar").circularProgress({
             color: "#000",
-            line_width: 17,
-            height: "350px",
-            width: "350px",
+            line_width: 6,
+            height: "150px",
+            width: "150px",
             percent: 0,
             // counter_clockwise: true,
             starting_position: 0
