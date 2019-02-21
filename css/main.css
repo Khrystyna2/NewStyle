@@ -1535,6 +1535,9 @@ input[type='search']::placeholder, input[type='text']::placeholder {
   font-weight: 400;
   margin-left: 1rem;
 }
+.map .contact__list a {
+  color: #000;
+}
 .map .contact__list p {
   display: inline-block;
   margin: 0;

@@ -557,6 +557,9 @@
             font-size: .82rem;
             font-weight: 400;
             margin-left: 1rem;
+            a {
+                color: $black;
+            }
             p {
                 display: inline-block;
                 margin: 0;
