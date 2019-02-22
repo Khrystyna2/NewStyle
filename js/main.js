@@ -636,25 +636,27 @@ $(document).ready(function () {
     });
 
     // counter number
-    let a = 0;
-    $(window).scroll(function () {
-        let offsetTop = $('.info').offset().top - window.innerHeight;
-        if (a == 0 && $(window).scrollTop() > offsetTop) {
-            $('.counter-value').css('opacity', '1');
-            $('.counter-value').each(function () {
-                $(this).prop('Counter', 0).animate({
-                    Counter: $(this).text()
-                }, {
-                        duration: 3000,
-                        easing: 'swing',
-                        step: function (now) {
-                            $(this).text(Math.ceil(now));
-                        }
-                    });
-            });
-            a = 1;
-        }
-    });
-
+    if ($(".info").length === 1) {
+        let a = 0;
+        $(window).scroll(function () {
+            let offsetTop = $('.info').offset().top - window.innerHeight;
+            console.log('scroll', offsetTop);
+            if (a == 0 && $(window).scrollTop() > offsetTop) {
+                $('.counter-value').css('opacity', '1');
+                $('.counter-value').each(function () {
+                    $(this).prop('Counter', 0).animate({
+                        Counter: $(this).text()
+                    }, {
+                            duration: 3000,
+                            easing: 'swing',
+                            step: function (now) {
+                                $(this).text(Math.ceil(now));
+                            }
+                        });
+                });
+                a = 1;
+            }
+        });
+    }
 
 });
