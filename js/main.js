@@ -640,7 +640,6 @@ $(document).ready(function () {
         let a = 0;
         $(window).scroll(function () {
             let offsetTop = $('.info').offset().top - window.innerHeight;
-            console.log('scroll', offsetTop);
             if (a == 0 && $(window).scrollTop() > offsetTop) {
                 $('.counter-value').css('opacity', '1');
                 $('.counter-value').each(function () {
