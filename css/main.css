@@ -2412,7 +2412,6 @@ input[type='search']::placeholder, input[type='text']::placeholder {
 .video__items {
   position: relative;
   width: 46%;
-  height: 15.8rem;
   margin-bottom: 4.3rem;
 }
 .video__items::after {
@@ -2427,28 +2426,13 @@ input[type='search']::placeholder, input[type='text']::placeholder {
 .video__items:nth-of-type(2n)::after {
   display: none;
 }
-.video__play {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.video__items_video {
+  height: 15.8rem;
+  width: 100%;
 }
-.video__play > p {
-  position: absolute;
-  left: 1.5rem;
-  bottom: 0;
-  color: #fff;
-  font-weight: 700;
-  font-family: "Noto Serif", sans-serif;
-  font-size: 0.9rem;
+.video__title {
+  font-size: 1rem;
+  margin-top: 0.6rem;
 }
 
 .blog__search {
@@ -3656,8 +3640,10 @@ input[type='search']::placeholder, input[type='text']::placeholder {
   }
 
   .video__items {
-    height: 12.8rem;
     margin-bottom: 3.5rem;
+  }
+  .video__items_video {
+    height: 12.8rem;
   }
 
   .download__items {
@@ -3977,9 +3963,8 @@ input[type='search']::placeholder, input[type='text']::placeholder {
     width: 12rem;
   }
 
-  .video__items {
+  .video__items_video {
     height: 10rem;
-    margin-bottom: 3.5rem;
   }
 
   .blog__search {
@@ -4414,10 +4399,12 @@ input[type='search']::placeholder, input[type='text']::placeholder {
 @media only screen and (max-width: 500px) {
   .video__items {
     width: 100%;
-    height: 15rem;
   }
   .video__items::after {
     display: none;
+  }
+  .video__items_video {
+    height: 15rem;
   }
 
   .blog__post {
@@ -4473,13 +4460,8 @@ input[type='search']::placeholder, input[type='text']::placeholder {
     display: none;
   }
 
-  .video__items {
-    width: 100%;
+  .video__items_video {
     height: 13rem;
-    margin-bottom: 3.5rem;
-  }
-  .video__items::after {
-    display: none;
   }
 
   .certificates__items {
