@@ -351,21 +351,28 @@
                         left: 50%;
                         margin-left: -20px;
                     }
+                    li {
+                        &::after {
+                            content: '';
+                            display: none;
+                        }
+                    }
                     a {
                         color: $gray;
                         padding-left: 0;
-                        &::after {
-                            content: '';
-                            border-bottom: none;
-                            width: 0;
-                        }
-                        &:hover {
-                            &::after {
-                                width: 0;
-                            }
-                        }
                     }
                 }
+            }
+            &__item_third-layer {
+                >span {
+                    color: $gray;
+                    padding-left: 0;
+                }
+            }
+            &__item_subMenu-right {
+                left: 0;
+                padding: 1.3rem 0;
+                font-size: 1rem;
             }
         }
         &__phone,
@@ -726,27 +733,27 @@
         margin-top: 3rem;
     }
     
-.region {
-    .tabs-content {
-        height: 25rem;
-        &__info {
-            top: auto;
+    .region {
+        .tabs-content {
+            height: 25rem;
+            &__info {
+                top: auto;
+            }
         }
+        &__select-btn {
+            height: 2.3rem;
+            width: 12.8rem;
+        }
+        &__maps {
+            height: 19rem;
+            position: relative;
+        }
+        &__info {
+            position: relative;
+            width: 100%;
+        }
+    
     }
-    &__select-btn {
-        height: 2.3rem;
-        width: 12.8rem;
-    }
-    &__maps {
-        height: 19rem;
-        position: relative;
-    }
-    &__info {
-        position: relative;
-        width: 100%;
-    }
-   
-}
 }
 
 @media only screen and (max-width: 767.8px) {
@@ -756,7 +763,6 @@
                 width: 45%;
             }
         }
-    
     }
 
     .index-collections {
