@@ -487,6 +487,33 @@ input[type='search']::placeholder, input[type='text']::placeholder {
   text-decoration: underline;
 }
 
+.site-map {
+  margin-top: 2rem;
+}
+.site-map__title {
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+.site-map__items {
+  margin: 0.8rem 0;
+}
+.site-map__items > ul {
+  list-style-type: disc;
+}
+.site-map__items > ul li {
+  color: #828282;
+}
+.site-map__items ul {
+  margin-left: 1.4rem;
+  font-size: .8rem;
+}
+.site-map a {
+  color: #828282;
+}
+.site-map a:hover {
+  color: #000;
+}
+
 .choose-language {
   width: 100%;
   height: 100vh;
