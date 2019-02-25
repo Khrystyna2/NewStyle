@@ -274,7 +274,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.4rem;
     @include transition(box-shadow 0.4s);
     &:hover {
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.09);
